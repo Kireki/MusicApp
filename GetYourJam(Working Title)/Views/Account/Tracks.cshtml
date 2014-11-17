@@ -1,0 +1,37 @@
+﻿@using Microsoft.Ajax.Utilities
+@using Newtonsoft.Json
+@model IList<GetYourJam_Working_Title_.Models.ScTracksViewModel>
+@{
+    ViewBag.Title = "Liked artists";
+}
+    
+@if (Model.Count > 0)
+{
+    string json = JsonConvert.SerializeObject(Model);
+    <script type="text/javascript">
+        var tracks = JSON.parse(@json);
+    </script>
+}
+<h2>Tracks similar to likes</h2>
+
+@if (Model.Count > 0)
+{
+    <div class="row">
+        @for (var i = 0; i < 20; i++)
+        {
+            var imgUrl = "http://placehold.it/300x300";
+            if (!String.IsNullOrEmpty(Model[i].artwork_url))
+            {
+                imgUrl = Model[i].artwork_url.Replace("large", "t500x500");
+            }
+            <div class="col-md-3">
+                <a href="@Model[i].permalink_url" class="thumbnail" target="_blank">
+                    <img src="@imgUrl" alt="@Model[i].title" />
+                </a>
+                <div>
+                    <p>@Model[i].title</p>
+                </div>
+            </div>
+        }
+    </div>
+}

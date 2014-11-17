@@ -4,7 +4,7 @@ using System.Linq;
 using System.Web;
 using Newtonsoft.Json;
 
-namespace GetYourJam_Working_Title_.Service_classes
+namespace GetYourJam_Working_Title_.Models
 {
     public class Image
     {

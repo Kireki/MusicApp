@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace GetYourJam_Working_Title_.Service_classes
+namespace GetYourJam_Working_Title_.Models
 {
-    public class ScUsersRootObject
+    public class ScUsersViewModel
     {
         public int id { get; set; }
         public string kind { get; set; }
@@ -57,7 +57,7 @@ namespace GetYourJam_Working_Title_.Service_classes
         public string external_url { get; set; }
     }
 
-    public class ScTracksRootObject
+    public class ScTracksViewModel
     {
         public string kind { get; set; }
         public int id { get; set; }

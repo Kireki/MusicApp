@@ -1,14 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Script.Serialization;
 using Facebook;
-using GetYourJam_Working_Title_.Service_classes;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
@@ -61,7 +62,7 @@ namespace GetYourJam_Working_Title_.Controllers
             }
         }
 
-        public async Task<ActionResult> FacebookArtistLikes()
+        public async Task<ActionResult> Tracks()
         {
 
             //getting FB data
@@ -97,7 +98,10 @@ namespace GetYourJam_Working_Title_.Controllers
 //            request.AddUrlSegment("artistName", "white lies");
 //            var response = client.Execute(request);
 //            Debug.WriteLine(response.Content);
-
+            
+            //
+            //getting SoundCloud Data
+            //TODO:Optimize This
             List<int> userIds = new List<int>();
             foreach (var artist in similarArtists)
             {
@@ -107,7 +111,7 @@ namespace GetYourJam_Working_Title_.Controllers
                 userIds.Add(userId);
             }
 
-            var tracks = new List<ScTracksRootObject>();
+            var tracks = new List<ScTracksViewModel>();
             foreach (var id in userIds)
             {
                 Debug.WriteLine(String.Format("Adding tracks for {0}…", id));
@@ -124,7 +128,10 @@ namespace GetYourJam_Working_Title_.Controllers
 //            var response = client.Execute(request);
 //            Debug.WriteLine(response.Content);
 
-            return View(fbLikedArtists);
+//            var jsonSerializer = new JavaScriptSerializer();
+//            var tracksJson = jsonSerializer.Serialize(tracks);
+
+            return View(tracks);
         }
 
         private async Task<int> GetUserId(string artistName)
@@ -133,17 +140,17 @@ namespace GetYourJam_Working_Title_.Controllers
             string url = String.Format("http://api.soundcloud.com/users.json?q={0}&client_id=f31b372d38cde9769c9e54a8e29bc8aa", HttpUtility.UrlEncode(artistName));
             HttpResponseMessage response = await client.GetAsync(url);
             var responseText = await response.Content.ReadAsStringAsync();
-            var user = JsonConvert.DeserializeObject<List<ScUsersRootObject>>(responseText);
+            List<ScUsersViewModel> user = JsonConvert.DeserializeObject<List<ScUsersViewModel>>(responseText);
             return user[0].id;
         }
 
-        private async Task<List<ScTracksRootObject>> GetUserTracks(int userId)
+        private async Task<List<ScTracksViewModel>> GetUserTracks(int userId)
         {
             HttpClient client = new HttpClient();
             string url = String.Format("http://api.soundcloud.com/users/{0}/tracks.json?client_id=f31b372d38cde9769c9e54a8e29bc8aa", userId);
             HttpResponseMessage response = await client.GetAsync(url);
             var responseText = await response.Content.ReadAsStringAsync();
-            var tracks = JsonConvert.DeserializeObject<List<ScTracksRootObject>>(responseText);
+            List<ScTracksViewModel> tracks = JsonConvert.DeserializeObject<List<ScTracksViewModel>>(responseText);
             return tracks;
         }
 
@@ -157,7 +164,7 @@ namespace GetYourJam_Working_Title_.Controllers
             HashSet<string> similarArtistNames = new HashSet<string>();
             foreach (var artist in similarArtists.similarartists.artist)
             {
-                if (float.Parse(artist.match) > 0.35)
+                if (double.Parse(artist.match, CultureInfo.InvariantCulture) > 0.35)
                 {
                     similarArtistNames.Add(artist.name);
                 }
@@ -534,7 +541,7 @@ namespace GetYourJam_Working_Title_.Controllers
                 {
                     return View("ExternalLoginFailure");
                 }
-                var user = new ApplicationUser() { UserName = model.Username };
+                var user = new ApplicationUser() { UserName = model.Email, Email = model.Email };
                 IdentityResult result = await UserManager.CreateAsync(user);
                 if (result.Succeeded)
                 {
