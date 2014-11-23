@@ -1,0 +1,14 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    Hello, @CurrentUser.Name. How's the weather in @CurrentUser.Country?
+</p>
+
+<p>
+    <a href="@Url.Action("Logout", "Home")">Log Out</a>
+</p>
