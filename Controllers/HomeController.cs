@@ -15,13 +15,13 @@ namespace MusicApp.Controllers
 {
     public class HomeController : AppController
     {
-        private readonly UserManager<AppUser> _userManager;
+        private readonly UserManager<User> _userManager;
 
         public HomeController() : this(Startup.UserManagerFactory.Invoke())
         {
         }
 
-        public HomeController(UserManager<AppUser> userManager)
+        public HomeController(UserManager<User> userManager)
         {
             this._userManager = userManager;
         }

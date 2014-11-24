@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace MusicApp
 {
-    public class AppUserPrincipal : ClaimsPrincipal
+    public class UserPrincipal : ClaimsPrincipal
     {
-        public AppUserPrincipal(ClaimsPrincipal principal) : base(principal)
+        public UserPrincipal(ClaimsPrincipal principal) : base(principal)
         {
         }
 

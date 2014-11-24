@@ -9,11 +9,11 @@ namespace MusicApp.Controllers
 {
     public abstract class AppController : Controller
     {
-        public AppUserPrincipal CurrentUser
+        public UserPrincipal CurrentUser
         {
             get
             {
-                return new AppUserPrincipal(this.User as ClaimsPrincipal);
+                return new UserPrincipal(this.User as ClaimsPrincipal);
             }
         }
     }

@@ -1,9 +1,13 @@
-﻿namespace MusicApp.Models
+﻿using System;
+using Microsoft.AspNet.Identity;
+
+namespace MusicApp.Models
 {
-    public class User
+    public class User : IUser
     {
-        public int ID { get; set; }
-        public string Username { get; set; }
+        public String Id { get; set; }
+        public string UserName { get; set; }
         public string Password { get; set; }
+
     }
 }

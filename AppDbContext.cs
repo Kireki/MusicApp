@@ -4,7 +4,7 @@ using MusicApp.Models;
 
 namespace MusicApp
 {
-    public class AppDbContext : IdentityDbContext<AppUser>
+    public class AppDbContext : DbContext
     {
         public AppDbContext() : base("AppDbContext")
         {
