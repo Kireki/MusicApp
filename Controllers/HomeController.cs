@@ -109,7 +109,7 @@ namespace MusicApp.Controllers
 
             var user = new User()
             {
-                UserName = model.Email,
+                UserName = model.UserName,
                 Email = model.Email,
                 FacebookUser = "false"
             };

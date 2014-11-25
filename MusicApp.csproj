@@ -154,15 +154,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201411232252113_initial.cs" />
-    <Compile Include="Migrations\201411232252113_initial.Designer.cs">
-      <DependentUpon>201411232252113_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201411251916238_removedFbUser.cs" />
-    <Compile Include="Migrations\201411251916238_removedFbUser.Designer.cs">
-      <DependentUpon>201411251916238_removedFbUser.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="ViewModels\LoginModel.cs" />
     <Compile Include="Models\Track.cs" />
@@ -193,14 +184,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\App\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201411232252113_initial.resx">
-      <DependentUpon>201411232252113_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201411251916238_removedFbUser.resx">
-      <DependentUpon>201411251916238_removedFbUser.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
