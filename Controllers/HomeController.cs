@@ -15,13 +15,13 @@ namespace MusicApp.Controllers
 {
     public class HomeController : AppController
     {
-        private readonly UserManager<User> _userManager;
+        private readonly UserManager<User, int> _userManager;
 
         public HomeController() : this(Startup.UserManagerFactory.Invoke())
         {
         }
 
-        public HomeController(UserManager<User> userManager)
+        public HomeController(UserManager<User, int> userManager)
         {
             this._userManager = userManager;
         }
@@ -54,7 +54,7 @@ namespace MusicApp.Controllers
                 return View();
             }
 
-            var user = await _userManager.FindAsync(model.Email, model.Password);
+            var user = await _userManager.FindAsync(model.UserName, model.Password);
 
             if (user != null)
             {
@@ -107,11 +107,11 @@ namespace MusicApp.Controllers
                 return View();
             }
 
-            var user = new AppUser
+            var user = new User()
             {
                 UserName = model.Email,
-                Country = model.Country,
-                Age = model.Age
+                Email = model.Email,
+                FacebookUser = "false"
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
@@ -130,11 +130,10 @@ namespace MusicApp.Controllers
             return View();
         }
 
-        private async Task SignIn(AppUser user)
+        private async Task SignIn(User user)
         {
             var identity = await _userManager.CreateIdentityAsync(
                 user, DefaultAuthenticationTypes.ApplicationCookie);
-            
         }
 
         private IAuthenticationManager GetAuthenticationManager()

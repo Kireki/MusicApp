@@ -9,14 +9,13 @@ using MusicApp.Models;
 
 namespace MusicApp
 {
-    public class AppUserClaimsIdentityFactory : ClaimsIdentityFactory<User, string>
+    public class AppUserClaimsIdentityFactory : ClaimsIdentityFactory<User, int>
     {
-        public async override Task<ClaimsIdentity> CreateAsync(UserManager<User, string> manager,
+        public async override Task<ClaimsIdentity> CreateAsync(UserManager<User, int> manager,
             User user, string authenticationType)
         {
             var identity = await base.CreateAsync(manager, user, authenticationType);
-            identity.AddClaim(new Claim(ClaimTypes.Country, user.Country));
-
+            identity.AddClaim(new Claim("FacebookUser", user.FacebookUser));
             return identity;
         }
     }

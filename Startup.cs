@@ -14,7 +14,7 @@ namespace MusicApp
 {
     public class Startup
     {
-        public static Func<UserManager<User>> UserManagerFactory { get; private set; }
+        public static Func<UserManager<User, int>> UserManagerFactory { get; private set; }
 
         public void Configuration(IAppBuilder app)
         {
@@ -26,9 +26,9 @@ namespace MusicApp
 
             UserManagerFactory = () =>
             {
-                var userManager = new UserManager<User>(
-                    new AppUserStore())
-                userManager.UserValidator = new UserValidator<User>(userManager)
+                var userManager = new UserManager<User, int>(
+                    new AppUserStore(new AppDbContext()));
+                userManager.UserValidator = new UserValidator<User, int>(userManager)
                 {
                     AllowOnlyAlphanumericUserNames = false
                 };

@@ -18,9 +18,9 @@ namespace MusicApp
             get { return this.FindFirst(ClaimTypes.Name).Value; }
         }
 
-        public string Country
+        public string FacebookUser
         {
-            get { return this.FindFirst(ClaimTypes.Country).Value; }
+            get { return this.FindFirst("FacebookUser").Value; }
         }
     }
 }

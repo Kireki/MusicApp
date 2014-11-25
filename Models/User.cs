@@ -1,13 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using Microsoft.AspNet.Identity;
 
 namespace MusicApp.Models
 {
-    public class User : IUser
+    public class User : IUser<int>
     {
-        public String Id { get; set; }
+        public int Id { get; set; }
         public string UserName { get; set; }
-        public string Password { get; set; }
+        public string PasswordHash { get; set; }
+        public string Email { get; set; }
+        public string FacebookUser { get; set; }
 
+        public virtual ICollection<Track> Tracks { get; set; }
+        public virtual ICollection<Artist> Artists { get; set; }
     }
 }

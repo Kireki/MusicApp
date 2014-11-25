@@ -12,21 +12,20 @@ namespace MusicApp
         }
 
         public DbSet<User> Users { get; set; }
-        public DbSet<FacebookUser> FacebookUsers { get; set; }
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Track> Tracks { get; set; }
-//
-//        protected override void OnModelCreating(DbModelBuilder modelBuilder)
-//        {
-//            modelBuilder.Entity<FacebookUser>()
-//                .HasMany(c => c.Tracks)
-//                .WithMany(i => i.FacebookUsers)
-//                .Map(t => t.MapLeftKey("FacebookUserID").MapRightKey("TrackID").ToTable("FacebookUserTracks"));
-//
-//            modelBuilder.Entity<FacebookUser>()
-//                .HasMany(a => a.Artists)
-//                .WithMany(f => f.FacebookUsers)
-//                .Map(l => l.MapLeftKey("FacebookUserID").MapRightKey("ArtistID").ToTable("FacebookUserArtists"));
-//        }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<User>()
+                .HasMany(t => t.Tracks)
+                .WithMany(u => u.Users)
+                .Map(l => l.MapLeftKey("UserID").MapRightKey("TrackID").ToTable("UserTracks"));
+
+            modelBuilder.Entity<User>()
+                .HasMany(a => a.Artists)
+                .WithMany(u => u.Users)
+                .Map(l => l.MapLeftKey("UserID").MapRightKey("ArtistID").ToTable("UserArtists"));
+        }
     }
 }
