@@ -11,7 +11,7 @@ namespace MusicApp.Models
         public string UserName { get; set; }
         public string PasswordHash { get; set; }
         public string Email { get; set; }
-        public string FacebookUser { get; set; }
+        public string FacebookUserId { get; set; }
 
         public virtual ICollection<Track> Tracks { get; set; }
         public virtual ICollection<Artist> Artists { get; set; }

@@ -6,6 +6,8 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Security;
+using Facebook;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using MusicApp.Models;
@@ -16,6 +18,19 @@ namespace MusicApp.Controllers
     public class HomeController : AppController
     {
         private readonly UserManager<User, int> _userManager;
+        private AppDbContext _db = new AppDbContext();
+
+        private Uri _facebookRedirectUri
+        {
+            get
+            {
+                var uriBuilder = new UriBuilder(Request.Url);
+                uriBuilder.Query = null;
+                uriBuilder.Fragment = null;
+                uriBuilder.Path = Url.Action("FacebookCallback");
+                return uriBuilder.Uri;
+            }
+        }
 
         public HomeController() : this(Startup.UserManagerFactory.Invoke())
         {
@@ -82,6 +97,76 @@ namespace MusicApp.Controllers
             return returnUrl;
         }
 
+        [AllowAnonymous]
+        public ActionResult FacebookLogin()
+        {
+            var fb = new FacebookClient();
+            var loginUrl = fb.GetLoginUrl(new
+            {
+                client_id = "547825262011313",
+                client_secret = "bfa4057d2c74fc3c2086f2c10576255f",
+                redirect_uri = _facebookRedirectUri.AbsoluteUri,
+                response_type = "code",
+                scope = "email,user_actions.music,user_likes"
+            });
+
+            Debug.WriteLine(loginUrl.AbsoluteUri);
+
+            return Redirect(loginUrl.AbsoluteUri);
+        }
+
+        [AllowAnonymous]
+        public async Task<ActionResult> FacebookCallback()
+        {
+            var fb = new FacebookClient();
+            dynamic result = fb.Post("oauth/access_token", new
+            {
+                client_id = "547825262011313", //App ID
+                client_secret = "bfa4057d2c74fc3c2086f2c10576255f", //App Secret
+                redirect_uri = _facebookRedirectUri.AbsoluteUri,
+                code = Request.QueryString["code"]
+            });
+
+            string accessToken = result.access_token;
+
+            if (String.IsNullOrEmpty(accessToken))
+            {
+                ModelState.AddModelError("", "Was unable to login, please try again");
+                RedirectToAction("Login", "Home");
+            }
+
+            fb.AccessToken = accessToken;
+            dynamic me = fb.Get("me?fields=first_name,last_name,id,email");
+
+            var user = new User
+            {
+                UserName = String.Format("{0} {1}", me.first_name, me.last_name),
+                PasswordHash = null,
+                Email = me.email,
+                FacebookUserId = me.id
+            };
+
+            var isNewUser = _db.Users.FirstOrDefault(u => u.FacebookUserId == user.FacebookUserId && u.PasswordHash == null) == null;
+
+            if (isNewUser)
+            {
+                Task.Factory.StartNew(() =>
+                {
+                    _db.Users.Add(user);
+                    _db.SaveChanges();
+                });
+            }
+
+            var identity = await _userManager.CreateIdentityAsync(
+                    user, DefaultAuthenticationTypes.ApplicationCookie);
+            GetAuthenticationManager().SignIn(identity);
+
+            Session["AccessToken"] = accessToken;
+            Session["FacebookLogin"] = true;
+
+            return RedirectToAction("Index", "Home");
+        }
+
         public ActionResult Logout()
         {
             var ctx = Request.GetOwinContext();
@@ -111,7 +196,7 @@ namespace MusicApp.Controllers
             {
                 UserName = model.UserName,
                 Email = model.Email,
-                FacebookUser = "false"
+                FacebookUserId = "false"
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);

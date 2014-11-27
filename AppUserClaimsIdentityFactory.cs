@@ -15,7 +15,7 @@ namespace MusicApp
             User user, string authenticationType)
         {
             var identity = await base.CreateAsync(manager, user, authenticationType);
-            identity.AddClaim(new Claim("FacebookUser", user.FacebookUser));
+            identity.AddClaim(new Claim("FacebookUser", user.FacebookUserId));
             return identity;
         }
     }
