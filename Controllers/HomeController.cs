@@ -44,6 +44,10 @@ namespace MusicApp.Controllers
         // GET: Home
         public ActionResult Index()
         {
+            if (Session["AccessToken"] == null)
+            {
+                
+            }
             return View();
         }
 

@@ -157,6 +157,14 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201412011525054_changedColumnName.cs" />
+    <Compile Include="Migrations\201412011525054_changedColumnName.Designer.cs">
+      <DependentUpon>201412011525054_changedColumnName.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201412011558252_storingAccessTokens.cs" />
+    <Compile Include="Migrations\201412011558252_storingAccessTokens.Designer.cs">
+      <DependentUpon>201412011558252_storingAccessTokens.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
     <Compile Include="ViewModels\LoginModel.cs" />
@@ -188,6 +196,14 @@
     <Folder Include="App_Data\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\App\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201412011525054_changedColumnName.resx">
+      <DependentUpon>201412011525054_changedColumnName.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412011558252_storingAccessTokens.resx">
+      <DependentUpon>201412011558252_storingAccessTokens.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
