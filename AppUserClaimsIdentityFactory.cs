@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -17,6 +18,7 @@ namespace MusicApp
             var identity = await base.CreateAsync(manager, user, authenticationType);
             identity.AddClaim(new Claim("FacebookUserId", user.FacebookUserId));
             identity.AddClaim(new Claim("FacebookAccessToken", user.FacebookAccessToken));
+            identity.AddClaim(new Claim("Id", user.Id.ToString(CultureInfo.InvariantCulture)));
             return identity;
         }
     }

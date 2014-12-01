@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using MusicApp.Models;
 using MusicApp.ViewModels;
+using Newtonsoft.Json;
 
 namespace MusicApp.Controllers
 {
@@ -20,14 +22,16 @@ namespace MusicApp.Controllers
         private readonly UserManager<User, int> _userManager;
         private AppDbContext _db = new AppDbContext();
 
-        private Uri _facebookRedirectUri
+        private Uri FacebookRedirectUri
         {
             get
             {
-                var uriBuilder = new UriBuilder(Request.Url);
-                uriBuilder.Query = null;
-                uriBuilder.Fragment = null;
-                uriBuilder.Path = Url.Action("FacebookCallback");
+                var uriBuilder = new UriBuilder(Request.Url)
+                {
+                    Query = null,
+                    Fragment = null,
+                    Path = Url.Action("FacebookCallback")
+                };
                 return uriBuilder.Uri;
             }
         }
@@ -41,13 +45,53 @@ namespace MusicApp.Controllers
             this._userManager = userManager;
         }
 
-        // GET: Home
-        public ActionResult Index()
+        public dynamic GetFbArtistLikes()
         {
             if (Session["AccessToken"] == null)
             {
-                
+                try
+                {
+                    Session["AccessToken"] =
+                        _db.Users.FirstOrDefault(u => u.FacebookUserId == CurrentUser.FacebookUserId).FacebookAccessToken;
+                }
+                catch (NullReferenceException)
+                {
+                    RedirectToAction("Login", "Home");
+                }
             }
+
+            try
+            {
+                var fbcl = new FacebookClient(Session["AccessToken"].ToString());
+//                Debug.WriteLine(fbcl.Get("me/music"));
+                return fbcl.Get("me/music");
+            }
+            catch (FacebookOAuthException)
+            {
+                var fbcl = new FacebookClient();
+                dynamic result = fbcl.Get("oauth/access_token", new
+                {
+                    client_id = "547825262011313",
+                    client_secret = "bfa4057d2c74fc3c2086f2c10576255f",
+                    grant_type = "fb_exchange_token",
+                    fb_exchange_token = CurrentUser.FacebookAccessToken
+                });
+                _db.Users.FirstOrDefault(u => u.FacebookUserId == CurrentUser.FacebookUserId).FacebookAccessToken = result.access_token;
+                _db.SaveChangesAsync();
+                Session["AccessToken"] = result.access_token;
+//                Debug.WriteLine(fbcl.Get("me/music"));
+                return fbcl.Get("me/music");
+            }
+        }
+
+        // GET: Home
+        public async Task<ActionResult> Index()
+        {
+            if (String.IsNullOrEmpty(CurrentUser.FacebookAccessToken))
+            {
+                RedirectToAction("Login", "Home");
+            }
+            var likedFbArtists = GetFbArtistLikes();
             return View();
         }
 
@@ -109,7 +153,7 @@ namespace MusicApp.Controllers
             {
                 client_id = "547825262011313",
                 client_secret = "bfa4057d2c74fc3c2086f2c10576255f",
-                redirect_uri = _facebookRedirectUri.AbsoluteUri,
+                redirect_uri = FacebookRedirectUri.AbsoluteUri,
                 response_type = "code",
                 scope = "email,user_actions.music,user_likes"
             });
@@ -127,7 +171,7 @@ namespace MusicApp.Controllers
             {
                 client_id = "547825262011313", //App ID
                 client_secret = "bfa4057d2c74fc3c2086f2c10576255f", //App Secret
-                redirect_uri = _facebookRedirectUri.AbsoluteUri,
+                redirect_uri = FacebookRedirectUri.AbsoluteUri,
                 code = Request.QueryString["code"]
             });
 
@@ -147,7 +191,8 @@ namespace MusicApp.Controllers
                 UserName = String.Format("{0} {1}", me.first_name, me.last_name),
                 PasswordHash = null,
                 Email = me.email,
-                FacebookUserId = me.id
+                FacebookUserId = me.id,
+                FacebookAccessToken = accessToken
             };
 
             var isNewUser = _db.Users.FirstOrDefault(u => u.FacebookUserId == user.FacebookUserId && u.PasswordHash == null) == null;
