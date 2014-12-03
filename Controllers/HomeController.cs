@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Globalization;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Mvc.Ajax;
 using System.Web.Security;
 using Facebook;
 using Microsoft.AspNet.Identity;
@@ -45,49 +47,69 @@ namespace MusicApp.Controllers
             this._userManager = userManager;
         }
 
+        
         public dynamic GetFbArtistLikes()
         {
-            if (Session["AccessToken"] == null)
+            if (Session["CurrentUser"] == null)
             {
-                try
-                {
-                    Session["AccessToken"] =
-                        _db.Users.FirstOrDefault(u => u.FacebookUserId == CurrentUser.FacebookUserId).FacebookAccessToken;
-                }
-                catch (NullReferenceException)
+                var userData = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
+                if (userData == null)
                 {
                     RedirectToAction("Login", "Home");
                 }
+                Session["CurrentUser"] = userData;
             }
+
+            var currentUser = (User) Session["CurrentUser"];
 
             try
             {
-                var fbcl = new FacebookClient(Session["AccessToken"].ToString());
+                var fbcl = new FacebookClient(currentUser.FacebookAccessToken);
                 return fbcl.Get("me/music");
             }
             catch (FacebookOAuthException)
             {
-                var fbcl = new FacebookClient();
-                dynamic result = fbcl.Get("oauth/access_token", new
+                try
                 {
-                    client_id = "547825262011313",
-                    client_secret = "bfa4057d2c74fc3c2086f2c10576255f",
-                    grant_type = "fb_exchange_token",
-                    fb_exchange_token = CurrentUser.FacebookAccessToken
-                });
-                _db.Users.FirstOrDefault(u => u.FacebookUserId == CurrentUser.FacebookUserId).FacebookAccessToken = result.access_token;
-                _db.SaveChangesAsync();
-                Session["AccessToken"] = result.access_token;
-                return fbcl.Get("me/music");
+                    var fbcl = new FacebookClient();
+                    dynamic result = fbcl.Get("oauth/access_token", new
+                    {
+                        client_id = "547825262011313",
+                        client_secret = "bfa4057d2c74fc3c2086f2c10576255f",
+                        grant_type = "fb_exchange_token",
+                        fb_exchange_token = currentUser.FacebookAccessToken
+                    });
+                    _db.Users.FirstOrDefault(u => u.Id == currentUser.Id).FacebookAccessToken
+                        = result.access_token;
+                    _db.SaveChangesAsync();
+                    currentUser.FacebookAccessToken = result.access_token;
+                    Session["CurrentUser"] = currentUser;
+                    return fbcl.Get("me/music");
+                }
+                catch (NullReferenceException e)
+                {
+                    Debug.WriteLine(e.Message + " " + e.Source);
+                    return null;
+                }
+            }
+            catch (NullReferenceException e)
+            {
+                Debug.WriteLine(e.Message + " " + e.Source);
+                return null;
             }
         }
 
         // GET: Home
         public async Task<ActionResult> Index()
         {
-            if (CurrentUser == null)
+            if (CurrentUserClaims == null)
             {
                 RedirectToAction("Login", "Home");
+            }
+
+            if (Session["CurrentUser"] == null)
+            {
+                Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             }
             dynamic likedFbArtists = GetFbArtistLikes();
             return View();
@@ -119,12 +141,11 @@ namespace MusicApp.Controllers
 
             if (user != null)
             {
-                Debug.WriteLine("correct creds");
                 var identity = await _userManager.CreateIdentityAsync(
                     user, DefaultAuthenticationTypes.ApplicationCookie);
 
                 GetAuthenticationManager().SignIn(identity);
-
+                Session["CurrentUser"] = user;
                 return Redirect(GetRedirectUrl(model.ReturnUrl));
             }
 
@@ -180,7 +201,7 @@ namespace MusicApp.Controllers
             fb.AccessToken = accessToken;
             dynamic me = fb.Get("me?fields=first_name,last_name,id,email");
 
-            var user = new User
+            var userData = new User
             {
                 FacebookName = String.Format("{0} {1}", me.first_name, me.last_name),
                 FacebookUserId = me.id,
@@ -188,22 +209,24 @@ namespace MusicApp.Controllers
                 UserName = me.email
             };
 
-            var isNewUser = _db.Users.FirstOrDefault(u => u.UserName == user.UserName) == null;
+            var user = _db.Users.FirstOrDefault(u => u.UserName == userData.UserName);
 
-            if (isNewUser)
+            if (user == null)
             {
                 Task.Factory.StartNew(() =>
                 {
-                    _db.Users.Add(user);
+                    _db.Users.Add(userData);
                     _db.SaveChanges();
                 });
+                user = userData;
             }
 
             var identity = await _userManager.CreateIdentityAsync(
-                    user, DefaultAuthenticationTypes.ApplicationCookie);
+                    userData, DefaultAuthenticationTypes.ApplicationCookie);
             GetAuthenticationManager().SignIn(identity);
 
             Session["AccessToken"] = accessToken;
+            Session["CurrentUser"] = user;
 
             return RedirectToAction("Index", "Home");
         }
@@ -233,7 +256,7 @@ namespace MusicApp.Controllers
                 return View();
             }
 
-            var user = new User()
+            var user = new User
             {
                 UserName = model.Email,
             };

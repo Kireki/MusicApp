@@ -13,7 +13,7 @@ namespace MusicApp
         {
         }
 
-        public string Name
+        public string UserName
         {
             get { return this.FindFirst(ClaimTypes.Name).Value; }
         }

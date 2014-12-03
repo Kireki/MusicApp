@@ -9,7 +9,7 @@ namespace MusicApp.Controllers
 {
     public abstract class AppController : Controller
     {
-        public UserPrincipal CurrentUser
+        public UserPrincipal CurrentUserClaims
         {
             get
             {

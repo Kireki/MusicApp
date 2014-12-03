@@ -158,13 +158,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201412011558252_storingAccessTokens.cs" />
-    <Compile Include="Migrations\201412011558252_storingAccessTokens.Designer.cs">
-      <DependentUpon>201412011558252_storingAccessTokens.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201412030815575_dbCleanup.cs" />
-    <Compile Include="Migrations\201412030815575_dbCleanup.Designer.cs">
-      <DependentUpon>201412030815575_dbCleanup.cs</DependentUpon>
+    <Compile Include="Migrations\201412032143472_initialAfterDeletion.cs" />
+    <Compile Include="Migrations\201412032143472_initialAfterDeletion.Designer.cs">
+      <DependentUpon>201412032143472_initialAfterDeletion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
@@ -199,11 +195,8 @@
     <Folder Include="Views\App\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201412011558252_storingAccessTokens.resx">
-      <DependentUpon>201412011558252_storingAccessTokens.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201412030815575_dbCleanup.resx">
-      <DependentUpon>201412030815575_dbCleanup.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201412032143472_initialAfterDeletion.resx">
+      <DependentUpon>201412032143472_initialAfterDeletion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

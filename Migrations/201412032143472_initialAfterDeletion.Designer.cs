@@ -7,13 +7,13 @@ namespace MusicApp.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class dbCleanup : IMigrationMetadata
+    public sealed partial class initialAfterDeletion : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(dbCleanup));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(initialAfterDeletion));
         
         string IMigrationMetadata.Id
         {
-            get { return "201412030815575_dbCleanup"; }
+            get { return "201412032143472_initialAfterDeletion"; }
         }
         
         string IMigrationMetadata.Source
