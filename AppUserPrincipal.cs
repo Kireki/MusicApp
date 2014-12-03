@@ -13,16 +13,6 @@ namespace MusicApp
         {
         }
 
-        public int Id
-        {
-            get
-            {
-                int id;
-                int.TryParse(this.FindFirst("Id").Value, out id);
-                return id;
-            }
-        }
-
         public string Name
         {
             get { return this.FindFirst(ClaimTypes.Name).Value; }

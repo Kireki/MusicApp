@@ -63,7 +63,6 @@ namespace MusicApp.Controllers
             try
             {
                 var fbcl = new FacebookClient(Session["AccessToken"].ToString());
-//                Debug.WriteLine(fbcl.Get("me/music"));
                 return fbcl.Get("me/music");
             }
             catch (FacebookOAuthException)
@@ -79,7 +78,6 @@ namespace MusicApp.Controllers
                 _db.Users.FirstOrDefault(u => u.FacebookUserId == CurrentUser.FacebookUserId).FacebookAccessToken = result.access_token;
                 _db.SaveChangesAsync();
                 Session["AccessToken"] = result.access_token;
-//                Debug.WriteLine(fbcl.Get("me/music"));
                 return fbcl.Get("me/music");
             }
         }
@@ -87,11 +85,11 @@ namespace MusicApp.Controllers
         // GET: Home
         public async Task<ActionResult> Index()
         {
-            if (String.IsNullOrEmpty(CurrentUser.FacebookAccessToken))
+            if (CurrentUser == null)
             {
                 RedirectToAction("Login", "Home");
             }
-            var likedFbArtists = GetFbArtistLikes();
+            dynamic likedFbArtists = GetFbArtistLikes();
             return View();
         }
 
@@ -141,7 +139,6 @@ namespace MusicApp.Controllers
             {
                 return Url.Action("Index", "Home");
             }
-
             return returnUrl;
         }
 
@@ -157,9 +154,6 @@ namespace MusicApp.Controllers
                 response_type = "code",
                 scope = "email,user_actions.music,user_likes"
             });
-
-            Debug.WriteLine(loginUrl.AbsoluteUri);
-
             return Redirect(loginUrl.AbsoluteUri);
         }
 
@@ -188,14 +182,13 @@ namespace MusicApp.Controllers
 
             var user = new User
             {
-                UserName = String.Format("{0} {1}", me.first_name, me.last_name),
-                PasswordHash = null,
-                Email = me.email,
+                FacebookName = String.Format("{0} {1}", me.first_name, me.last_name),
                 FacebookUserId = me.id,
-                FacebookAccessToken = accessToken
+                FacebookAccessToken = accessToken,
+                UserName = me.email
             };
 
-            var isNewUser = _db.Users.FirstOrDefault(u => u.FacebookUserId == user.FacebookUserId && u.PasswordHash == null) == null;
+            var isNewUser = _db.Users.FirstOrDefault(u => u.UserName == user.UserName) == null;
 
             if (isNewUser)
             {
@@ -211,7 +204,6 @@ namespace MusicApp.Controllers
             GetAuthenticationManager().SignIn(identity);
 
             Session["AccessToken"] = accessToken;
-            Session["FacebookLogin"] = true;
 
             return RedirectToAction("Index", "Home");
         }
@@ -243,9 +235,7 @@ namespace MusicApp.Controllers
 
             var user = new User()
             {
-                UserName = model.UserName,
-                Email = model.Email,
-                FacebookUserId = "false"
+                UserName = model.Email,
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);

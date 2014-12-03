@@ -10,7 +10,7 @@ namespace MusicApp.Models
         public int Id { get; set; }
         public string UserName { get; set; }
         public string PasswordHash { get; set; }
-        public string Email { get; set; }
+        public string FacebookName { get; set; }
         public string FacebookUserId { get; set; }
         public string FacebookAccessToken { get; set; }
 
