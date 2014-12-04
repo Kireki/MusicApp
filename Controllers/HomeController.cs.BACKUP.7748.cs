@@ -102,6 +102,9 @@ namespace MusicApp.Controllers
         // GET: Home
         public async Task<ActionResult> Index()
         {
+<<<<<<< HEAD
+
+=======
             if (CurrentUserClaims == null)
             {
                 RedirectToAction("Login", "Home");
@@ -112,6 +115,7 @@ namespace MusicApp.Controllers
                 Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             }
             dynamic likedFbArtists = GetFbArtistLikes();
+>>>>>>> 2ba8d0387e63c7a4927f663862ea0e524af86416
             return View();
         }
 

@@ -46,6 +46,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Facebook">
+      <HintPath>..\packages\Facebook.6.8.0\lib\net45\Facebook.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -131,19 +134,20 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
+    <None Include="Scripts\jquery-2.1.1-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <None Include="Scripts\jquery-2.1.1-vsdoc.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AppDbContext.cs" />
-    <Compile Include="AppUser.cs" />
     <Compile Include="AppUserPrincipal.cs" />
+    <Compile Include="AppUserStore.cs" />
     <Compile Include="AppViewPage.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -154,13 +158,12 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201411232252113_initial.cs" />
-    <Compile Include="Migrations\201411232252113_initial.Designer.cs">
-      <DependentUpon>201411232252113_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201412032143472_initialAfterDeletion.cs" />
+    <Compile Include="Migrations\201412032143472_initialAfterDeletion.Designer.cs">
+      <DependentUpon>201412032143472_initialAfterDeletion.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
-    <Compile Include="Models\FacebookUser.cs" />
     <Compile Include="ViewModels\LoginModel.cs" />
     <Compile Include="Models\Track.cs" />
     <Compile Include="Models\User.cs" />
@@ -192,8 +195,8 @@
     <Folder Include="Views\App\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201411232252113_initial.resx">
-      <DependentUpon>201411232252113_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201412032143472_initialAfterDeletion.resx">
+      <DependentUpon>201412032143472_initialAfterDeletion.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

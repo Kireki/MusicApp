@@ -112,7 +112,6 @@ namespace MusicApp.Controllers
                 Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             }
             dynamic likedFbArtists = GetFbArtistLikes();
-
             return View();
         }
 
@@ -142,7 +141,6 @@ namespace MusicApp.Controllers
 
             if (user != null)
             {
-                Debug.WriteLine("correct creds");
                 var identity = await _userManager.CreateIdentityAsync(
                     user, DefaultAuthenticationTypes.ApplicationCookie);
 
@@ -261,8 +259,6 @@ namespace MusicApp.Controllers
             var user = new User
             {
                 UserName = model.Email,
-                Country = model.Country,
-                Age = model.Age
             };
 
             var result = await _userManager.CreateAsync(user, model.Password);
@@ -285,7 +281,6 @@ namespace MusicApp.Controllers
         {
             var identity = await _userManager.CreateIdentityAsync(
                 user, DefaultAuthenticationTypes.ApplicationCookie);
-            
         }
 
         private IAuthenticationManager GetAuthenticationManager()

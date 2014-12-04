@@ -7,20 +7,25 @@ using System.Threading.Tasks;
 
 namespace MusicApp
 {
-    public class AppUserPrincipal : ClaimsPrincipal
+    public class UserPrincipal : ClaimsPrincipal
     {
-        public AppUserPrincipal(ClaimsPrincipal principal) : base(principal)
+        public UserPrincipal(ClaimsPrincipal principal) : base(principal)
         {
         }
 
-        public string Name
+        public string UserName
         {
             get { return this.FindFirst(ClaimTypes.Name).Value; }
         }
 
-        public string Country
+        public string FacebookUserId
         {
-            get { return this.FindFirst(ClaimTypes.Country).Value; }
+            get { return this.FindFirst("FacebookUserId").Value; }
+        }
+
+        public string FacebookAccessToken
+        {
+            get { return this.FindFirst("FacebookAccessToken").Value; }
         }
     }
 }

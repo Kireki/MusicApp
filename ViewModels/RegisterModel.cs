@@ -11,16 +11,18 @@ namespace MusicApp.ViewModels
     {
         [Required]
         [DataType(DataType.EmailAddress)]
+        [Display(Name = "Email")]
         public string Email { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
+        [Display(Name = "Password")]
         public string Password { get; set; }
 
         [Required]
-        public string Country { get; set; }
-
-        [Required]
-        public int Age { get; set; }
+        [DataType(DataType.Password)]
+        [Display(Name = "Confirm Password")]
+        [Compare("Password", ErrorMessage = "Passwords must match")]
+        public string PasswordConfirm { get; set; }
     }
 }

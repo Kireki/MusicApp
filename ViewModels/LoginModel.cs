@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Web.Mvc;
+using System.Web.Services.Protocols;
 
 namespace MusicApp.ViewModels
 {
@@ -7,10 +8,12 @@ namespace MusicApp.ViewModels
     {
         [Required]
         [DataType(DataType.EmailAddress)]
-        public string Email { get; set; }
+        [Display(Name = "Email")]
+        public string UserName { get; set; }
 
         [Required]
         [DataType(DataType.Password)]
+        [Display(Name = "Password")]
         public string Password { get; set; }
 
         [HiddenInput]

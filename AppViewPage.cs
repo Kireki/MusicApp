@@ -10,11 +10,11 @@ namespace MusicApp
 {
     public abstract class AppViewPage<TModel> : WebViewPage<TModel>
     {
-        protected AppUserPrincipal CurrentUser
+        protected UserPrincipal CurrentUserClaims
         {
             get
             {
-                return new AppUserPrincipal(this.User as ClaimsPrincipal);
+                return new UserPrincipal(this.User as ClaimsPrincipal);
             }
         }
     }
