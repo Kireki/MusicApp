@@ -13,6 +13,7 @@ using System.Web.Security;
 using Facebook;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
+using MusicApp.APIObjectClasses;
 using MusicApp.Models;
 using MusicApp.ViewModels;
 using Newtonsoft.Json;
@@ -48,7 +49,7 @@ namespace MusicApp.Controllers
         }
 
         
-        public dynamic GetFbArtistLikes()
+        public LikedFbArtists GetFbArtistLikes()
         {
             if (Session["CurrentUser"] == null)
             {
@@ -65,7 +66,7 @@ namespace MusicApp.Controllers
             try
             {
                 var fbcl = new FacebookClient(currentUser.FacebookAccessToken);
-                return fbcl.Get("me/music");
+                return JsonConvert.DeserializeObject<LikedFbArtists>(fbcl.Get("me/music").ToString());
             }
             catch (FacebookOAuthException)
             {
@@ -84,7 +85,7 @@ namespace MusicApp.Controllers
                     _db.SaveChangesAsync();
                     currentUser.FacebookAccessToken = result.access_token;
                     Session["CurrentUser"] = currentUser;
-                    return fbcl.Get("me/music");
+                    return JsonConvert.DeserializeObject<LikedFbArtists>(fbcl.Get("me/music").ToString()); ;
                 }
                 catch (NullReferenceException e)
                 {
@@ -111,54 +112,66 @@ namespace MusicApp.Controllers
             {
                 Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             }
-            dynamic fbArtistsResult = GetFbArtistLikes();
+            var fbArtistsResult = GetFbArtistLikes();
 
             var currentUser = (User) Session["CurrentUser"];
 
             var artistsToAdd = new List<Artist>();
 
-            var artistTable = _db.Artists;
-            var addableArtist = new Artist();
+
+//            var artistTable = _db.Artists;
+//            Artist addableArtist;
+//            foreach (var artist in fbArtistsResult.data.Where(artist => artistTable.FirstOrDefault(a => a.FacebookId == artist.id) == null))
+//            {
+//                addableArtist = new Artist
+//                {
+//                    Name = artist.name,
+//                };
+//                artistsToAdd.Add(addableArtist);
+//            }
+//
+//            if (artistsToAdd.Count != 0)
+//            {
+//                _db.Artists.AddRange(artistsToAdd);
+//                _db.SaveChanges();
+//            }
+//
+//            var userArtistsToAdd = new List<Artist>();
+//            foreach (var artist in fbArtistsResult.data.Where(artist => currentUser.Artists.FirstOrDefault(a => a.FacebookId == artist.id) == null))
+//            {
+//                addableArtist = artistTable.FirstOrDefault(a => a.FacebookId == artist.id);
+//                userArtistsToAdd.Add(addableArtist);
+//            }
+//
+//            if (userArtistsToAdd.Count == 0) return View();
+//            var updatableUser = (User) Session["CurrentUser"];
+//            foreach (var artist in userArtistsToAdd)
+//            {
+//                updatableUser.Artists.Add(artist);
+//            }
+
+            Artist check;
             foreach (var artist in fbArtistsResult.data)
             {
-                if (artistTable.FirstOrDefault(a => a.FacebookId == artist.id) == null)
+                check = new Artist
                 {
-                    addableArtist = new Artist
-                    {
-                        Name = artist.name,
-                        FacebookId = artist.id
-                    };
-                    artistsToAdd.Add(addableArtist);
+                    Id = artist.id,
+                    Name = artist.name
+                };
+                if (!currentUser.Artists.Contains(check))
+                {
+                    artistsToAdd.Add(check);
                 }
             }
-
             if (artistsToAdd.Count != 0)
             {
-                _db.Artists.AddRange(artistsToAdd);
-                _db.SaveChanges();
-            }
-
-            var userArtistsToAdd = new List<Artist>();
-            foreach (var artist in fbArtistsResult.data)
-            {
-                if (currentUser.Artists.FirstOrDefault(a => a.FacebookId == artist.id) == null)
+                foreach (var artist in artistsToAdd)
                 {
-                    addableArtist = artistTable.FirstOrDefault(a => a.FacebookId == artist.id);
-                    userArtistsToAdd.Add(addableArtist);
-                }
-            }
-
-            if (userArtistsToAdd.Count != 0)
-            {
-                var updatableUser = (User) Session["CurrentUser"];
-                foreach (var artist in userArtistsToAdd)
-                {
-                    updatableUser.Artists.Add(artist);
+                    currentUser.Artists.Add(artist);
+                    Debug.WriteLine(artist.Name + " - added");
                 }
                 _db.SaveChanges();
-                Session["CurrentUser"] = updatableUser;
             }
-
             return View();
         }
 
