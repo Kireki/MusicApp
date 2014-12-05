@@ -100,6 +100,38 @@ namespace MusicApp.Controllers
             }
         }
 
+        public List<Artist> AddNewArtists(LikedFbArtists fbArtists)
+        {
+            var currentUser = (User)Session["CurrentUser"];
+
+            var artistsToAdd = new List<Artist>();
+
+            Artist check;
+            foreach (var artist in fbArtists.data)
+            {
+                check = new Artist
+                {
+                    Id = artist.id,
+                    Name = artist.name
+                };
+                if (currentUser.Artists.FirstOrDefault(a => a.Id == check.Id) == null)
+                {
+                    artistsToAdd.Add(check);
+                }
+            }
+            if (artistsToAdd.Count != 0)
+            {
+                foreach (var artist in artistsToAdd)
+                {
+                    currentUser.Artists.Add(artist);
+                    Debug.WriteLine(artist.Name + " - added");
+                }
+                _db.SaveChanges();
+                return artistsToAdd;
+            }
+            return null;
+        }
+
         // GET: Home
         public async Task<ActionResult> Index()
         {
@@ -114,64 +146,12 @@ namespace MusicApp.Controllers
             }
             var fbArtistsResult = GetFbArtistLikes();
 
-            var currentUser = (User) Session["CurrentUser"];
-
-            var artistsToAdd = new List<Artist>();
-
-
-//            var artistTable = _db.Artists;
-//            Artist addableArtist;
-//            foreach (var artist in fbArtistsResult.data.Where(artist => artistTable.FirstOrDefault(a => a.FacebookId == artist.id) == null))
-//            {
-//                addableArtist = new Artist
-//                {
-//                    Name = artist.name,
-//                };
-//                artistsToAdd.Add(addableArtist);
-//            }
-//
-//            if (artistsToAdd.Count != 0)
-//            {
-//                _db.Artists.AddRange(artistsToAdd);
-//                _db.SaveChanges();
-//            }
-//
-//            var userArtistsToAdd = new List<Artist>();
-//            foreach (var artist in fbArtistsResult.data.Where(artist => currentUser.Artists.FirstOrDefault(a => a.FacebookId == artist.id) == null))
-//            {
-//                addableArtist = artistTable.FirstOrDefault(a => a.FacebookId == artist.id);
-//                userArtistsToAdd.Add(addableArtist);
-//            }
-//
-//            if (userArtistsToAdd.Count == 0) return View();
-//            var updatableUser = (User) Session["CurrentUser"];
-//            foreach (var artist in userArtistsToAdd)
-//            {
-//                updatableUser.Artists.Add(artist);
-//            }
-
-            Artist check;
-            foreach (var artist in fbArtistsResult.data)
+            if (AddNewArtists(fbArtistsResult) == null)
             {
-                check = new Artist
-                {
-                    Id = artist.id,
-                    Name = artist.name
-                };
-                if (!currentUser.Artists.Contains(check))
-                {
-                    artistsToAdd.Add(check);
-                }
+                
             }
-            if (artistsToAdd.Count != 0)
-            {
-                foreach (var artist in artistsToAdd)
-                {
-                    currentUser.Artists.Add(artist);
-                    Debug.WriteLine(artist.Name + " - added");
-                }
-                _db.SaveChanges();
-            }
+            
+
             return View();
         }
 
@@ -285,7 +265,6 @@ namespace MusicApp.Controllers
                     userData, DefaultAuthenticationTypes.ApplicationCookie);
             GetAuthenticationManager().SignIn(identity);
 
-            Session["AccessToken"] = accessToken;
             Session["CurrentUser"] = user;
 
             return RedirectToAction("Index", "Home");
