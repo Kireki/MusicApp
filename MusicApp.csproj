@@ -190,6 +190,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="APIObjectClasses\" />
     <Folder Include="App_Data\" />
     <Folder Include="Views\Account\" />
     <Folder Include="Views\App\" />

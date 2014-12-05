@@ -111,7 +111,54 @@ namespace MusicApp.Controllers
             {
                 Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             }
-            dynamic likedFbArtists = GetFbArtistLikes();
+            dynamic fbArtistsResult = GetFbArtistLikes();
+
+            var currentUser = (User) Session["CurrentUser"];
+
+            var artistsToAdd = new List<Artist>();
+
+            var artistTable = _db.Artists;
+            var addableArtist = new Artist();
+            foreach (var artist in fbArtistsResult.data)
+            {
+                if (artistTable.FirstOrDefault(a => a.FacebookId == artist.id) == null)
+                {
+                    addableArtist = new Artist
+                    {
+                        Name = artist.name,
+                        FacebookId = artist.id
+                    };
+                    artistsToAdd.Add(addableArtist);
+                }
+            }
+
+            if (artistsToAdd.Count != 0)
+            {
+                _db.Artists.AddRange(artistsToAdd);
+                _db.SaveChanges();
+            }
+
+            var userArtistsToAdd = new List<Artist>();
+            foreach (var artist in fbArtistsResult.data)
+            {
+                if (currentUser.Artists.FirstOrDefault(a => a.FacebookId == artist.id) == null)
+                {
+                    addableArtist = artistTable.FirstOrDefault(a => a.FacebookId == artist.id);
+                    userArtistsToAdd.Add(addableArtist);
+                }
+            }
+
+            if (userArtistsToAdd.Count != 0)
+            {
+                var updatableUser = (User) Session["CurrentUser"];
+                foreach (var artist in userArtistsToAdd)
+                {
+                    updatableUser.Artists.Add(artist);
+                }
+                _db.SaveChanges();
+                Session["CurrentUser"] = updatableUser;
+            }
+
             return View();
         }
 
