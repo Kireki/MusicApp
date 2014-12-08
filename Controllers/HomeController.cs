@@ -30,6 +30,7 @@ namespace MusicApp.Controllers
         public const string SoundCloud = "f31b372d38cde9769c9e54a8e29bc8aa";
         public const string FbAppId = "547825262011313";
         public const string FbAppSecret = "bfa4057d2c74fc3c2086f2c10576255f";
+        public const double MatchStrictness = 0.35;
     }
     public class HomeController : AppController
     {
@@ -143,6 +144,50 @@ namespace MusicApp.Controllers
             return null;
         }
 
+        public HashSet<string> GetSimilarArtists(List<Datum> fbLikedArists)
+        {
+//            var similarArtistNames = new HashSet<string>();
+//            foreach (var artist in fbLikedArists)
+//            {
+//                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), ApiKeysAndOtherConstants.LastFm);
+//                var client = new RestClient(urlBuilder);
+//                var request = new RestRequest();
+//                //                RestResponse response;
+//                client.ExecuteAsync<LastFmSimilarArtists>(request, response =>
+//                {
+//                    foreach (var similarArtist in response.Data.similarartists.artist)
+//                    {
+//                        similarArtistNames.Add(similarArtist.name);
+//                    }
+//                });
+//            }
+//            return 
+            var similarArtistNames = new HashSet<string>();
+            Parallel.ForEach(fbLikedArists, artist =>
+            {
+                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), ApiKeysAndOtherConstants.LastFm);
+                var client = new RestClient(urlBuilder);
+                var request = new RestRequest();
+                var response = client.Execute<LastFmSimilarArtists>(request);
+//                client.Execute<LastFmSimilarArtists>(request, response =>
+//                {
+//                    foreach (var similarArtist in response.Data.similarartists.artist)
+//                    {
+//                        similarArtistNames.Add(similarArtist.name);
+//                    }
+//                });
+                foreach (var similarArtist in response.Data.similarartists.artist)
+                {
+                    if (Double.Parse(similarArtist.match, CultureInfo.InvariantCulture) >= 0.35)
+                    {
+                        similarArtistNames.Add(similarArtist.name);
+                    }
+                }
+                similarArtistNames.Add(artist.name);
+            });
+            return similarArtistNames;
+        }
+
         // GET: Home
         public async Task<ActionResult> Index()
         {
@@ -162,22 +207,7 @@ namespace MusicApp.Controllers
                 Debug.WriteLine(artist.name);
             }
 
-            var similarArtistNames = new HashSet<string>();
-            foreach (var artist in fbArtistsResult.data)
-            {
-                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), ApiKeysAndOtherConstants.LastFm);
-                var client = new RestClient(urlBuilder);
-                var request = new RestRequest();
-//                RestResponse response;
-                client.ExecuteAsync<LastFmSimilarArtists>(request, response =>
-                {
-                    foreach (var similarArtist in response.Data.similarartists.artist)
-                    {
-                        similarArtistNames.Add(similarArtist.name);
-                        Debug.WriteLine(similarArtist.name);
-                    }
-                });
-            }
+            var similarArtistNames = GetSimilarArtists(fbArtistsResult.data);
             Debug.WriteLine("==========================");
 
             foreach (var similarArtistName in similarArtistNames)
@@ -185,7 +215,6 @@ namespace MusicApp.Controllers
                 Debug.WriteLine(similarArtistName);
             }
             Debug.WriteLine(similarArtistNames.Count);
-            
 
             return View();
         }
