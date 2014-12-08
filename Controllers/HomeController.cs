@@ -5,6 +5,7 @@ using System.Globalization;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Security.Claims;
+using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -14,12 +15,22 @@ using Facebook;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using MusicApp.APIObjectClasses;
+using MusicApp.Controllers;
 using MusicApp.Models;
 using MusicApp.ViewModels;
 using Newtonsoft.Json;
+using RestSharp;
+using Artist = MusicApp.Models.Artist;
 
 namespace MusicApp.Controllers
 {
+    public static class ApiKeysAndOtherConstants
+    {
+        public const string LastFm = "dc801c2df9fdf6605ff5de6ada4ecca5";
+        public const string SoundCloud = "f31b372d38cde9769c9e54a8e29bc8aa";
+        public const string FbAppId = "547825262011313";
+        public const string FbAppSecret = "bfa4057d2c74fc3c2086f2c10576255f";
+    }
     public class HomeController : AppController
     {
         private readonly UserManager<User, int> _userManager;
@@ -75,8 +86,8 @@ namespace MusicApp.Controllers
                     var fbcl = new FacebookClient();
                     dynamic result = fbcl.Get("oauth/access_token", new
                     {
-                        client_id = "547825262011313",
-                        client_secret = "bfa4057d2c74fc3c2086f2c10576255f",
+                        client_id = ApiKeysAndOtherConstants.FbAppId,
+                        client_secret = ApiKeysAndOtherConstants.FbAppSecret,
                         grant_type = "fb_exchange_token",
                         fb_exchange_token = currentUser.FacebookAccessToken
                     });
@@ -146,10 +157,34 @@ namespace MusicApp.Controllers
             }
             var fbArtistsResult = GetFbArtistLikes();
 
-            if (AddNewArtists(fbArtistsResult) == null)
+            foreach (var artist in fbArtistsResult.data)
             {
-                
+                Debug.WriteLine(artist.name);
             }
+
+            var similarArtistNames = new HashSet<string>();
+            foreach (var artist in fbArtistsResult.data)
+            {
+                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), ApiKeysAndOtherConstants.LastFm);
+                var client = new RestClient(urlBuilder);
+                var request = new RestRequest();
+//                RestResponse response;
+                client.ExecuteAsync<LastFmSimilarArtists>(request, response =>
+                {
+                    foreach (var similarArtist in response.Data.similarartists.artist)
+                    {
+                        similarArtistNames.Add(similarArtist.name);
+                        Debug.WriteLine(similarArtist.name);
+                    }
+                });
+            }
+            Debug.WriteLine("==========================");
+
+            foreach (var similarArtistName in similarArtistNames)
+            {
+                Debug.WriteLine(similarArtistName);
+            }
+            Debug.WriteLine(similarArtistNames.Count);
             
 
             return View();
@@ -209,8 +244,8 @@ namespace MusicApp.Controllers
             var fb = new FacebookClient();
             var loginUrl = fb.GetLoginUrl(new
             {
-                client_id = "547825262011313",
-                client_secret = "bfa4057d2c74fc3c2086f2c10576255f",
+                client_id = ApiKeysAndOtherConstants.FbAppId,
+                client_secret = ApiKeysAndOtherConstants.FbAppSecret,
                 redirect_uri = FacebookRedirectUri.AbsoluteUri,
                 response_type = "code",
                 scope = "email,user_actions.music,user_likes"
