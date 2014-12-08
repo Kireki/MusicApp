@@ -169,13 +169,6 @@ namespace MusicApp.Controllers
                 var client = new RestClient(urlBuilder);
                 var request = new RestRequest();
                 var response = client.Execute<LastFmSimilarArtists>(request);
-//                client.Execute<LastFmSimilarArtists>(request, response =>
-//                {
-//                    foreach (var similarArtist in response.Data.similarartists.artist)
-//                    {
-//                        similarArtistNames.Add(similarArtist.name);
-//                    }
-//                });
                 foreach (var similarArtist in response.Data.similarartists.artist)
                 {
                     if (Double.Parse(similarArtist.match, CultureInfo.InvariantCulture) >= 0.35)
@@ -186,6 +179,15 @@ namespace MusicApp.Controllers
                 similarArtistNames.Add(artist.name);
             });
             return similarArtistNames;
+        }
+
+        public HashSet<Track> GetTracks(HashSet<string> artists)
+        {
+            var tracks = new HashSet<Track>();
+            foreach (var artist in artists)
+            {
+                var urlBuilder = String.Format()
+            }
         }
 
         // GET: Home
@@ -215,6 +217,9 @@ namespace MusicApp.Controllers
                 Debug.WriteLine(similarArtistName);
             }
             Debug.WriteLine(similarArtistNames.Count);
+            Debug.WriteLine("==========================");
+
+            var tracks = GetTracks(similarArtistNames);
 
             return View();
         }

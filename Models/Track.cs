@@ -8,7 +8,6 @@ namespace MusicApp.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
         public string Name { get; set; }
-        public string ArtistId { get; set; }
         public virtual ICollection<User> Users { get; set; } 
     }
 }
