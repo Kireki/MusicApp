@@ -7,13 +7,12 @@ using System.Web;
 
 namespace MusicApp.Models
 {
-    public class ArtistTag
+    public class Tag
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public string Name { get; set; }
-        public int UserId { get; set; }
-        public virtual ICollection<Artist> Artists { get; set; }
-        public virtual ICollection<User> Users { get; set; } 
+        public int Count { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

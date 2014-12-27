@@ -24,13 +24,15 @@ using Artist = MusicApp.Models.Artist;
 
 namespace MusicApp.Controllers
 {
-    public static class ApiKeysAndOtherConstants
+    public static class Constants
     {
         public const string LastFm = "dc801c2df9fdf6605ff5de6ada4ecca5";
         public const string SoundCloud = "f31b372d38cde9769c9e54a8e29bc8aa";
         public const string FbAppId = "547825262011313";
         public const string FbAppSecret = "bfa4057d2c74fc3c2086f2c10576255f";
         public const double MatchStrictness = 0.35;
+        public const string LastFmUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&artist={0}&api_key={1}&format=json";
+        public const string ScUrl = "http://api.soundcloud.com/tracks.json?genres={0}&client_id={1}";
     }
     public class HomeController : AppController
     {
@@ -87,8 +89,8 @@ namespace MusicApp.Controllers
                     var fbcl = new FacebookClient();
                     dynamic result = fbcl.Get("oauth/access_token", new
                     {
-                        client_id = ApiKeysAndOtherConstants.FbAppId,
-                        client_secret = ApiKeysAndOtherConstants.FbAppSecret,
+                        client_id = Constants.FbAppId,
+                        client_secret = Constants.FbAppSecret,
                         grant_type = "fb_exchange_token",
                         fb_exchange_token = currentUser.FacebookAccessToken
                     });
@@ -144,12 +146,15 @@ namespace MusicApp.Controllers
             return null;
         }
 
-        public HashSet<string> GetSimilarArtists(List<Datum> fbLikedArists)
-        {
+
+
+        #region unusedGetArtistsMethod
+        //        public HashSet<string> GetSimilarArtists(List<Datum> fbLikedArists)
+//        {
 //            var similarArtistNames = new HashSet<string>();
 //            foreach (var artist in fbLikedArists)
 //            {
-//                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), ApiKeysAndOtherConstants.LastFm);
+//                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), Constants.LastFm);
 //                var client = new RestClient(urlBuilder);
 //                var request = new RestRequest();
 //                //                RestResponse response;
@@ -161,33 +166,92 @@ namespace MusicApp.Controllers
 //                    }
 //                });
 //            }
-//            return 
-            var similarArtistNames = new HashSet<string>();
-            Parallel.ForEach(fbLikedArists, artist =>
-            {
-                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), ApiKeysAndOtherConstants.LastFm);
-                var client = new RestClient(urlBuilder);
-                var request = new RestRequest();
-                var response = client.Execute<LastFmSimilarArtists>(request);
-                foreach (var similarArtist in response.Data.similarartists.artist)
-                {
-                    if (Double.Parse(similarArtist.match, CultureInfo.InvariantCulture) >= 0.35)
-                    {
-                        similarArtistNames.Add(similarArtist.name);
-                    }
-                }
-                similarArtistNames.Add(artist.name);
-            });
-            return similarArtistNames;
+//            return
+
+//            var similarArtistNames = new HashSet<string>();
+//            Parallel.ForEach(fbLikedArists, artist =>
+//            {
+//                var urlBuilder = String.Format("http://ws.audioscrobbler.com/2.0/?method=artist.getsimilar&artist={0}&api_key={1}&format=json", artist.name.Replace(" ", "+"), Constants.LastFm);
+//                var client = new RestClient(urlBuilder);
+//                var request = new RestRequest();
+//                var response = client.Execute<LastFmSimilarArtists>(request);
+//                foreach (var similarArtist in response.Data.similarartists.artist)
+//                {
+//                    if (Double.Parse(similarArtist.match, CultureInfo.InvariantCulture) >= 0.35)
+//                    {
+//                        similarArtistNames.Add(similarArtist.name);
+//                    }
+//                }
+//                similarArtistNames.Add(artist.name);
+//            });
+//            return similarArtistNames;
+//        }
+
+//        public HashSet<Track> GetTracks(HashSet<string> artists)
+//        {
+//            var tracks = new HashSet<Track>();
+//            foreach (var artist in artists)
+//            {
+//                var urlBuilder = String.Format();
+//            }
+        //        }
+        #endregion
+
+        public string GetData(string data, string apiKey, string url)
+        {
+            var urlBuilder = String.Format(url, data.Replace(" ", "%20"), apiKey);
+            var client = new RestClient(urlBuilder);
+            var request = new RestRequest();
+            var response = client.Execute(request);
+            return response.Content;
         }
 
-        public HashSet<Track> GetTracks(HashSet<string> artists)
+        public Dictionary<string, int> GetArtistTags(LikedFbArtists likedFbArtists)
         {
-            var tracks = new HashSet<Track>();
-            foreach (var artist in artists)
+            var tagCountDictionary = new Dictionary<string, int>();
+            foreach (var artist in likedFbArtists.data)
             {
-                var urlBuilder = String.Format()
+                LastFmArtistTags tags =
+                    JsonConvert.DeserializeObject<LastFmArtistTags>(GetData(artist.name, Constants.LastFm,
+                        Constants.LastFmUrl));
+                foreach (var tag in tags.toptags.tag)
+                {
+                    if (int.Parse(tag.count) > 10)
+                    {
+                        if (tagCountDictionary.ContainsKey(tag.name.ToLower()))
+                        {
+                            tagCountDictionary[tag.name.ToLower()] += 1;
+                        }
+                        else
+                        {
+                            tagCountDictionary.Add(tag.name.ToLower(), 1);
+                        }
+                    }
+                }
             }
+            return tagCountDictionary;
+        }
+
+        public Dictionary<int, string> GetTracks(Dictionary<string, int> genreTags)
+        {
+            var trackDictionary = new Dictionary<int, string>();
+            foreach (KeyValuePair<string, int> keyValuePair in genreTags)
+            {
+                List<SCTracks> tracks =
+                    JsonConvert.DeserializeObject<List<SCTracks>>(GetData(keyValuePair.Key, Constants.SoundCloud,
+                        Constants.ScUrl)).ToList();
+                foreach (var track in tracks)
+                {
+                    if (String.IsNullOrEmpty(track.track_type) || track.track_type == "original" || track.track_type == "remix" || track.track_type == "live")
+                    {
+                        if (!trackDictionary.ContainsKey(track.id))
+                        {
+                            trackDictionary.Add(track.id, track.title);
+                        }
+                    }
+                }
+            }
+            return trackDictionary;
         }
 
         // GET: Home
@@ -208,18 +272,40 @@ namespace MusicApp.Controllers
             {
                 Debug.WriteLine(artist.name);
             }
-
-            var similarArtistNames = GetSimilarArtists(fbArtistsResult.data);
             Debug.WriteLine("==========================");
 
-            foreach (var similarArtistName in similarArtistNames)
+            var userTags = GetArtistTags(fbArtistsResult);
+
+            foreach (KeyValuePair<string, int> keyValuePair in userTags)
             {
-                Debug.WriteLine(similarArtistName);
+                Debug.WriteLine(keyValuePair.Key + ": " + keyValuePair.Value);
             }
-            Debug.WriteLine(similarArtistNames.Count);
+
             Debug.WriteLine("==========================");
 
-            var tracks = GetTracks(similarArtistNames);
+            var tracks = GetTracks(userTags);
+
+            foreach (KeyValuePair<int, string> keyValuePair in tracks)
+            {
+                Debug.WriteLine(keyValuePair.Key + ": " + keyValuePair.Value);
+            }
+
+
+
+            
+//            var newArtistList = AddNewArtists(fbArtistsResult);
+
+//            var similarArtistNames = GetSimilarArtists(fbArtistsResult.data);
+//            Debug.WriteLine("==========================");
+
+//            foreach (var similarArtistName in similarArtistNames)
+//            {
+//                Debug.WriteLine(similarArtistName);
+//            }
+//            Debug.WriteLine(similarArtistNames.Count);
+//            Debug.WriteLine("==========================");
+
+//            var tracks = GetTracks(similarArtistNames);
 
             return View();
         }
@@ -278,8 +364,8 @@ namespace MusicApp.Controllers
             var fb = new FacebookClient();
             var loginUrl = fb.GetLoginUrl(new
             {
-                client_id = ApiKeysAndOtherConstants.FbAppId,
-                client_secret = ApiKeysAndOtherConstants.FbAppSecret,
+                client_id = Constants.FbAppId,
+                client_secret = Constants.FbAppSecret,
                 redirect_uri = FacebookRedirectUri.AbsoluteUri,
                 response_type = "code",
                 scope = "email,user_actions.music,user_likes"

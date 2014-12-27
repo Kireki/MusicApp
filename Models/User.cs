@@ -16,6 +16,6 @@ namespace MusicApp.Models
 
         public virtual ICollection<Track> Tracks { get; set; }
         public virtual ICollection<Artist> Artists { get; set; }
-        public virtual ICollection<ArtistTag> Tags { get; set; } 
+        public virtual ICollection<Tag> Tags { get; set; } 
     }
 }

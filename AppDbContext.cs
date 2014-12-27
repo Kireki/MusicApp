@@ -30,12 +30,7 @@ namespace MusicApp
             modelBuilder.Entity<User>()
                 .HasMany(t => t.Tags)
                 .WithMany(u => u.Users)
-                .Map(l => l.MapLeftKey("UserID").MapRightKey("ArtistID").ToTable("UserTags"));
-
-            modelBuilder.Entity<Artist>()
-                .HasMany(t => t.Tags)
-                .WithMany(a => a.Artists)
-                .Map(l => l.MapLeftKey("ArtistID").MapRightKey("TagName").ToTable("ArtistTags"));
+                .Map(l => l.MapLeftKey("UserID").MapRightKey("TagName").ToTable("UserTags"));
         }
     }
 }
