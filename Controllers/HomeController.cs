@@ -65,16 +65,6 @@ namespace MusicApp.Controllers
         
         public LikedFbArtists GetFbArtistLikes()
         {
-            if (Session["CurrentUser"] == null)
-            {
-                var userData = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
-                if (userData == null)
-                {
-                    RedirectToAction("Login", "Home");
-                }
-                Session["CurrentUser"] = userData;
-            }
-
             var currentUser = (User) Session["CurrentUser"];
 
             try
@@ -132,6 +122,7 @@ namespace MusicApp.Controllers
                     artistsToAdd.Add(check);
                 }
             }
+
             if (artistsToAdd.Count > 0)
             {
                 foreach (var artist in artistsToAdd)
@@ -321,20 +312,26 @@ namespace MusicApp.Controllers
         }
 
         // GET: Home
-        public async Task<ActionResult> Index()
+        public ActionResult Index()
         {
             var watch = new Stopwatch();
             watch.Start();
-            if (CurrentUserClaims == null)
+            if (CurrentUserClaims == null || _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) == null)
             {
-                RedirectToAction("Login", "Home");
+                return RedirectToAction("Login", "Home");
             }
-
-            if (Session["CurrentUser"] == null)
+            else
             {
-                Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
+                if (Session["CurrentUser"] == null)
+                {
+                    Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
+                }
             }
             var fbArtistsResult = GetFbArtistLikes();
+            if (fbArtistsResult == null)
+            {
+                return RedirectToAction("Login", "Home");
+            }
 
             var newArtistList = AddNewArtists(fbArtistsResult);
 
