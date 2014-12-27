@@ -120,10 +120,9 @@ namespace MusicApp.Controllers
 
             var artistsToAdd = new List<Artist>();
 
-            Artist check;
             foreach (var artist in fbArtists.data)
             {
-                check = new Artist
+                Artist check = new Artist
                 {
                     Id = artist.id,
                     Name = artist.name
@@ -133,15 +132,78 @@ namespace MusicApp.Controllers
                     artistsToAdd.Add(check);
                 }
             }
-            if (artistsToAdd.Count != 0)
+            if (artistsToAdd.Count > 0)
             {
                 foreach (var artist in artistsToAdd)
                 {
                     currentUser.Artists.Add(artist);
-                    Debug.WriteLine(artist.Name + " - added");
+                    Debug.WriteLine(artist.Name + " - artist added");
                 }
                 _db.SaveChanges();
                 return artistsToAdd;
+            }
+            return null;
+        }
+
+        public List<Tag> AddNewTags(Dictionary<string, int> tags)
+        {
+            var currentUser = (User) Session["CurrentUser"];
+            var tagsToAdd = new List<Tag>();
+            foreach (KeyValuePair<string, int> tagKeyValuePair in tags)
+            {
+                Tag check = new Tag
+                {
+                    Name = tagKeyValuePair.Key,
+                    Count = tagKeyValuePair.Value
+                };
+                if (currentUser.Tags.FirstOrDefault(t => t.Name == check.Name) == null)
+                {
+                    tagsToAdd.Add(check);
+                }
+                else
+                {
+                    currentUser.Tags.FirstOrDefault(t => t.Name == check.Name).Count += tagKeyValuePair.Value;
+                }
+            }
+            if (tagsToAdd.Count > 0)
+            {
+                foreach (var tag in tagsToAdd)
+                {
+                    currentUser.Tags.Add(tag);
+                    Debug.WriteLine(tag.Name + " - tag added");
+                }
+                _db.SaveChanges();
+                return tagsToAdd;
+            }
+            _db.SaveChanges();
+            return null;
+        }
+
+        public List<Track> AddNewTracks(List<Track> tracks)
+        {
+            var currentUser = (User) Session["CurrentUser"];
+            var tracksToAdd = new List<Track>();
+            foreach (var track in tracks)
+            {
+                Track check = new Track
+                {
+                    Id = track.Id,
+                    Name = track.Name
+                };
+                if (currentUser.Tracks.FirstOrDefault(t => t.Name == check.Name) == null)
+                {
+                    tracksToAdd.Add(check);
+                }
+            }
+            if (tracksToAdd.Count > 0)
+            {
+                foreach (var track in tracksToAdd)
+                {
+                    currentUser.Tracks.Add(track);
+                    Debug.WriteLine(track.Name + " - track added");
+                }
+                _db.SaveChanges();
+                return tracksToAdd;
             }
             return null;
         }
@@ -206,57 +268,63 @@ namespace MusicApp.Controllers
             return response.Content;
         }
 
-        public Dictionary<string, int> GetArtistTags(LikedFbArtists likedFbArtists)
+        public Dictionary<string, int> GetArtistTags(List<Artist> likedFbArtists)
         {
-            var tagCountDictionary = new Dictionary<string, int>();
-            foreach (var artist in likedFbArtists.data)
+            var artistTags = new Dictionary<string, int>();
+            foreach (var artist in likedFbArtists)
             {
                 LastFmArtistTags tags =
-                    JsonConvert.DeserializeObject<LastFmArtistTags>(GetData(artist.name, Constants.LastFm,
+                    JsonConvert.DeserializeObject<LastFmArtistTags>(GetData(artist.Name, Constants.LastFm,
                         Constants.LastFmUrl));
                 foreach (var tag in tags.toptags.tag)
                 {
                     if (int.Parse(tag.count) > 10)
                     {
-                        if (tagCountDictionary.ContainsKey(tag.name.ToLower()))
+                        if (artistTags.ContainsKey(tag.name.ToLower()))
                         {
-                            tagCountDictionary[tag.name.ToLower()] += 1;
+                            artistTags[tag.name.ToLower()] += 1;
                         }
                         else
                         {
-                            tagCountDictionary.Add(tag.name.ToLower(), 1);
+                            artistTags.Add(tag.name.ToLower(), 1);
                         }
                     }
                 }
             }
-            return tagCountDictionary;
+            return artistTags;
         }
 
-        public Dictionary<int, string> GetTracks(Dictionary<string, int> genreTags)
+        public List<Track> GetTracks(List<Tag> genreTags)
         {
-            var trackDictionary = new Dictionary<int, string>();
-            foreach (KeyValuePair<string, int> keyValuePair in genreTags)
+            var tracks = new List<Track>();
+            foreach (var tag in genreTags)
             {
-                List<SCTracks> tracks =
-                    JsonConvert.DeserializeObject<List<SCTracks>>(GetData(keyValuePair.Key, Constants.SoundCloud,
+                List<SCTracks> tracksOfTagGenre =
+                    JsonConvert.DeserializeObject<List<SCTracks>>(GetData(tag.Name, Constants.SoundCloud,
                         Constants.ScUrl)).ToList();
-                foreach (var track in tracks)
+                foreach (var track in tracksOfTagGenre)
                 {
                     if (String.IsNullOrEmpty(track.track_type) || track.track_type == "original" || track.track_type == "remix" || track.track_type == "live")
                     {
-                        if (!trackDictionary.ContainsKey(track.id))
+                        if (tracks.FirstOrDefault(t => t.Name == track.title) == null)
                         {
-                            trackDictionary.Add(track.id, track.title);
+                            tracks.Add(new Track
+                            {
+                                Id = track.id,
+                                Name = track.title
+                            });
                         }
                     }
                 }
             }
-            return trackDictionary;
+            return tracks;
         }
 
         // GET: Home
         public async Task<ActionResult> Index()
         {
+            var watch = new Stopwatch();
+            watch.Start();
             if (CurrentUserClaims == null)
             {
                 RedirectToAction("Login", "Home");
@@ -268,30 +336,50 @@ namespace MusicApp.Controllers
             }
             var fbArtistsResult = GetFbArtistLikes();
 
-            foreach (var artist in fbArtistsResult.data)
+            var newArtistList = AddNewArtists(fbArtistsResult);
+
+            if (newArtistList != null)
             {
-                Debug.WriteLine(artist.name);
-            }
-            Debug.WriteLine("==========================");
-
-            var userTags = GetArtistTags(fbArtistsResult);
-
-            foreach (KeyValuePair<string, int> keyValuePair in userTags)
-            {
-                Debug.WriteLine(keyValuePair.Key + ": " + keyValuePair.Value);
-            }
-
-            Debug.WriteLine("==========================");
-
-            var tracks = GetTracks(userTags);
-
-            foreach (KeyValuePair<int, string> keyValuePair in tracks)
-            {
-                Debug.WriteLine(keyValuePair.Key + ": " + keyValuePair.Value);
+                var tags = GetArtistTags(newArtistList);
+                var newTags = AddNewTags(tags);
+                if (newTags != null)
+                {
+                    var tracks = GetTracks(newTags);
+                    var newTracks = AddNewTracks(tracks);
+                }
             }
 
+            var currentUser = (User) Session["CurrentUser"];
+            var finalTracks = currentUser.Tracks;
+
+            foreach (var track in finalTracks)
+            {
+                Debug.WriteLine(track.Id + ": " + track.Name);
+            }
 
 
+#region olderVersionsOfCode
+            //            foreach (var artist in fbArtistsResult.data)
+//            {
+//                Debug.WriteLine(artist.name);
+//            }
+//            Debug.WriteLine("==========================");
+//
+//            var userTags = GetArtistTags(fbArtistsResult);
+//
+//            foreach (KeyValuePair<string, int> keyValuePair in userTags)
+//            {
+//                Debug.WriteLine(keyValuePair.Key + ": " + keyValuePair.Value);
+//            }
+//
+//            Debug.WriteLine("==========================");
+//
+//            var tracks = GetTracks(userTags);
+//
+//            foreach (KeyValuePair<int, string> keyValuePair in tracks)
+//            {
+//                Debug.WriteLine(keyValuePair.Key + ": " + keyValuePair.Value);
+//            }
             
 //            var newArtistList = AddNewArtists(fbArtistsResult);
 
@@ -305,8 +393,11 @@ namespace MusicApp.Controllers
 //            Debug.WriteLine(similarArtistNames.Count);
 //            Debug.WriteLine("==========================");
 
-//            var tracks = GetTracks(similarArtistNames);
+            //            var tracks = GetTracks(similarArtistNames);
+#endregion
 
+            watch.Stop();
+            Debug.WriteLine(watch.Elapsed);
             return View();
         }
 

@@ -14,6 +14,7 @@ namespace MusicApp
         public DbSet<User> Users { get; set; }
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Track> Tracks { get; set; }
+        public DbSet<Tag> Tags { get; set; } 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

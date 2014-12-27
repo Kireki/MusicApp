@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using MusicApp.Models;
 using Newtonsoft.Json;
 
 namespace MusicApp.APIObjectClasses
 {
-    public class Tag
+    public class ArtistTag
     {
         public string name { get; set; }
         public string count { get; set; }
@@ -21,7 +22,7 @@ namespace MusicApp.APIObjectClasses
 
     public class Toptags
     {
-        public List<Tag> tag { get; set; }
+        public List<ArtistTag> tag { get; set; }
         [JsonProperty(PropertyName = "@attr")]
         public Attr attr { get; set; }
     }
