@@ -106,7 +106,7 @@ namespace MusicApp.Controllers
 
         public List<Artist> AddNewArtists(LikedFbArtists fbArtists)
         {
-            var currentUser = (User)Session["CurrentUser"];
+            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
 
             var artistsToAdd = new List<Artist>();
 
@@ -133,12 +133,13 @@ namespace MusicApp.Controllers
                 _db.SaveChanges();
                 return artistsToAdd;
             }
+            _db.SaveChanges();
             return null;
         }
 
         public List<Tag> AddNewTags(Dictionary<string, int> tags)
         {
-            var currentUser = (User) Session["CurrentUser"];
+            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             var tagsToAdd = new List<Tag>();
             foreach (KeyValuePair<string, int> tagKeyValuePair in tags)
             {
@@ -172,7 +173,7 @@ namespace MusicApp.Controllers
 
         public List<Track> AddNewTracks(List<Track> tracks)
         {
-            var currentUser = (User) Session["CurrentUser"];
+            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             var tracksToAdd = new List<Track>();
             foreach (var track in tracks)
             {
@@ -196,6 +197,7 @@ namespace MusicApp.Controllers
                 _db.SaveChanges();
                 return tracksToAdd;
             }
+            _db.SaveChanges();
             return null;
         }
 
@@ -320,13 +322,12 @@ namespace MusicApp.Controllers
             {
                 return RedirectToAction("Login", "Home");
             }
-            else
+
+            if (Session["CurrentUser"] == null)
             {
-                if (Session["CurrentUser"] == null)
-                {
-                    Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
-                }
+                Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             }
+
             var fbArtistsResult = GetFbArtistLikes();
             if (fbArtistsResult == null)
             {
@@ -346,14 +347,20 @@ namespace MusicApp.Controllers
                 }
             }
 
-            var currentUser = (User) Session["CurrentUser"];
-            var finalTracks = currentUser.Tracks;
-
-            foreach (var track in finalTracks)
+            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
+            var finalTracks = currentUser.Tracks.Select(track => new
             {
-                Debug.WriteLine(track.Id + ": " + track.Name);
-            }
-
+                track.Id,
+                track.Name,
+                User = new
+                {
+                    currentUser.Id,
+                    currentUser.UserName,
+                    currentUser.FacebookName
+                }
+            });
+            string tracksJson = JsonConvert.SerializeObject(finalTracks);
+            Debug.WriteLine(tracksJson);
 
 #region olderVersionsOfCode
             //            foreach (var artist in fbArtistsResult.data)
