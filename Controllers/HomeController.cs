@@ -360,7 +360,7 @@ namespace MusicApp.Controllers
                 }
             });
             string tracksJson = JsonConvert.SerializeObject(finalTracks);
-            Debug.WriteLine(tracksJson);
+            ViewBag.Tracks = tracksJson;
 
 #region olderVersionsOfCode
             //            foreach (var artist in fbArtistsResult.data)
