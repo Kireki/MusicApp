@@ -1,21 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Globalization;
 using System.Linq;
-using System.Linq.Expressions;
-using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.Mvc.Ajax;
-using System.Web.Security;
 using Facebook;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security;
 using MusicApp.APIObjectClasses;
-using MusicApp.Controllers;
+using MusicApp.HelperClasses;
 using MusicApp.Models;
 using MusicApp.ViewModels;
 using Newtonsoft.Json;
@@ -30,7 +24,7 @@ namespace MusicApp.Controllers
         public const string SoundCloud = "f31b372d38cde9769c9e54a8e29bc8aa";
         public const string FbAppId = "547825262011313";
         public const string FbAppSecret = "bfa4057d2c74fc3c2086f2c10576255f";
-        public const double MatchStrictness = 0.35;
+        public const double TagStrictness = 10;
         public const string LastFmUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&artist={0}&api_key={1}&format=json";
         public const string ScUrl = "http://api.soundcloud.com/tracks.json?genres={0}&client_id={1}";
     }
@@ -271,7 +265,7 @@ namespace MusicApp.Controllers
                         Constants.LastFmUrl));
                 foreach (var tag in tags.toptags.tag)
                 {
-                    if (int.Parse(tag.count) > 10)
+                    if (int.Parse(tag.count) > Constants.TagStrictness)
                     {
                         if (artistTags.ContainsKey(tag.name.ToLower()))
                         {
@@ -320,6 +314,7 @@ namespace MusicApp.Controllers
             watch.Start();
             if (CurrentUserClaims == null || _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) == null)
             {
+                Debug.WriteLine("no claims or unidentified claim");
                 return RedirectToAction("Login", "Home");
             }
 
@@ -348,19 +343,17 @@ namespace MusicApp.Controllers
             }
 
             var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
-            var finalTracks = currentUser.Tracks.Select(track => new
+            var userTracks = currentUser.Tracks.ToList();
+            userTracks.Shuffle();
+            var finalTracks = userTracks.Select(track => new
             {
                 track.Id,
-                track.Name,
-                User = new
-                {
-                    currentUser.Id,
-                    currentUser.UserName,
-                    currentUser.FacebookName
-                }
+                track.Name
             });
             string tracksJson = JsonConvert.SerializeObject(finalTracks);
             ViewBag.Tracks = tracksJson;
+            ViewBag.First = finalTracks.First().Id;
+            ViewBag.FullName = currentUser.FacebookName;
 
 #region olderVersionsOfCode
             //            foreach (var artist in fbArtistsResult.data)
@@ -405,10 +398,16 @@ namespace MusicApp.Controllers
             return View();
         }
 
+
+
         [AllowAnonymous]
         //GET: Login
         public ActionResult Login(string returnUrl)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var model = new LoginModel
             {
                 ReturnUrl = returnUrl
@@ -421,6 +420,10 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> Login(LoginModel model)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (!ModelState.IsValid)
             {
                 Debug.WriteLine("invalid state");
@@ -456,6 +459,10 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public ActionResult FacebookLogin()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var fb = new FacebookClient();
             var loginUrl = fb.GetLoginUrl(new
             {
@@ -471,6 +478,10 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> FacebookCallback()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             var fb = new FacebookClient();
             dynamic result = fb.Post("oauth/access_token", new
             {
@@ -503,19 +514,13 @@ namespace MusicApp.Controllers
 
             if (user == null)
             {
-                Task.Factory.StartNew(() =>
-                {
-                    _db.Users.Add(userData);
-                    _db.SaveChanges();
-                });
-                user = userData;
+                _db.Users.Add(userData);
+                _db.SaveChanges();
             }
 
             var identity = await _userManager.CreateIdentityAsync(
                     userData, DefaultAuthenticationTypes.ApplicationCookie);
             GetAuthenticationManager().SignIn(identity);
-
-            Session["CurrentUser"] = user;
 
             return RedirectToAction("Index", "Home");
         }
@@ -532,6 +537,10 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             return View();
         }
 
@@ -539,6 +548,10 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> Register(RegisterModel model)
         {
+            if (User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Index", "Home");
+            }
             if (!ModelState.IsValid)
             {
                 Debug.WriteLine("Invalid state!");

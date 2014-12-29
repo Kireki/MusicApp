@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Security.Claims;
 using System.Text;
@@ -26,6 +27,18 @@ namespace MusicApp
         public string FacebookAccessToken
         {
             get { return this.FindFirst("FacebookAccessToken").Value; }
+        }
+
+        public string FirstLast
+        {
+            get
+            {
+                foreach (var claim in Claims)
+                {
+                    Debug.WriteLine(claim.Value + " " + claim.Type);
+                }
+                return this.FindFirst("FirstLast").Value;
+            }
         }
     }
 }
