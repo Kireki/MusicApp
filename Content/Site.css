@@ -1,6 +1,6 @@
 ﻿html, body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 0px;
     height: 100%;
 }
 
@@ -18,7 +18,8 @@ textarea {
 }
 
 #wrap {
-    min-height: 100%;
+    height: 100%;
+    background-color: darkgray;
 }
 
 #main {
@@ -35,7 +36,8 @@ textarea {
 }
 
 .mynavbar {
-    max-height: 80px;
+    height: 80px;
+    padding-bottom: 0px;
 }
 
 .profile-dropdown {
@@ -51,5 +53,19 @@ textarea {
 }
 
 .music {
-    margin-top: 40px;
+    margin-top: 12%;
+}
+
+.buttons {
+    font-size: 72px;
+}
+
+.blacklist-button {
+    margin-left: 65%;
+    margin-top: 90%;
+}
+
+.next-track-button {
+    margin-top: 90%;
+    margin-left: 10%
 }
