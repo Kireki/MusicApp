@@ -174,7 +174,8 @@ namespace MusicApp.Controllers
                 Track check = new Track
                 {
                     Id = track.Id,
-                    Name = track.Name
+                    Name = track.Name,
+                    ArtworkUrl = track.ArtworkUrl
                 };
                 if (currentUser.Tracks.FirstOrDefault(t => t.Name == check.Name) == null)
                 {
@@ -295,10 +296,16 @@ namespace MusicApp.Controllers
                     {
                         if (tracks.FirstOrDefault(t => t.Name == track.title) == null)
                         {
+                            var bigArtwork = track.artwork_url;
+                            if (bigArtwork != null)
+                            {
+                                bigArtwork = bigArtwork.Replace("large", "t500x500");
+                            }
                             tracks.Add(new Track
                             {
                                 Id = track.id,
-                                Name = track.title
+                                Name = track.title,
+                                ArtworkUrl = bigArtwork
                             });
                         }
                     }
@@ -314,7 +321,6 @@ namespace MusicApp.Controllers
             watch.Start();
             if (CurrentUserClaims == null || _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) == null)
             {
-                Debug.WriteLine("no claims or unidentified claim");
                 return RedirectToAction("Login", "Home");
             }
 
@@ -348,7 +354,8 @@ namespace MusicApp.Controllers
             var finalTracks = userTracks.Select(track => new
             {
                 track.Id,
-                track.Name
+                track.Name,
+                track.ArtworkUrl
             });
             string tracksJson = JsonConvert.SerializeObject(finalTracks);
             ViewBag.Tracks = tracksJson;
@@ -404,7 +411,7 @@ namespace MusicApp.Controllers
         //GET: Login
         public ActionResult Login(string returnUrl)
         {
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -420,7 +427,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> Login(LoginModel model)
         {
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -459,7 +466,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public ActionResult FacebookLogin()
         {
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -478,7 +485,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> FacebookCallback()
         {
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -537,7 +544,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -548,7 +555,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> Register(RegisterModel model)
         {
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
             {
                 return RedirectToAction("Index", "Home");
             }

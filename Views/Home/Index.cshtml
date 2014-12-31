@@ -14,19 +14,6 @@
     var tracks = JSON.parse('@Html.Raw(safeJsonString)');
 </script>
 <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
-<script type="text/javascript">
-    var currentTrackId = tracks[0].Id;
-    var trackIndex = 0;
-    function NextTrack() {
-        window.trackIndex++;
-        var widgetIframe = document.querySelector(".SCiframe");
-        var SCWidget = SC.Widget(widgetIframe);
-        var widgetURL = new URL(widgetIframe.src);
-        var newWidgetURL = widgetURL.search.replace(currentTrackId, tracks[trackIndex].Id);
-        newWidgetURL = newWidgetURL.replace("?url=", "");
-        SCWidget.load(newWidgetURL);
-    }
-</script>
 
 <div class="music row">
     <div class="col-md-3 buttons">
@@ -34,8 +21,18 @@
             <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
         </div>
     </div>
-    <div class="col-md-6 SCWidget">
-        <iframe class="SCiframe" width="580" height="580" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/@ViewBag.First&amp;auto_play=true&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=true&amp;hide_related=true&amp;visual=true&amp;start_track=0&amp;callback=true"></iframe>
+    <div class="col-md-6">
+        <div class="scWidget">
+            <iframe class="SCiframe" width="580" height="580" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/@ViewBag.First&amp;auto_play=true&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=true&amp;hide_related=true&amp;visual=true&amp;start_track=0&amp;callback=true"></iframe>
+        </div>
+        <div class="volume">
+            <div class="volume-icon">
+                <span class="glyphicon glyphicon-volume-up"></span>
+            </div>
+            <div class="volume-control">
+                <div id="sliderObj"></div>
+            </div>
+        </div>
     </div>
     <div class="col-md-3 buttons">
         <div class="next-track-button" title="Next track">
@@ -43,3 +40,5 @@
         </div>
     </div>
 </div>
+
+<script type="text/javascript" src="~/Scripts/main.js"></script>

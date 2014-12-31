@@ -6,6 +6,8 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/dhtmlxslider.css" rel="stylesheet" type="text/css"/>
+    <script src="~/Scripts/dhtmlxslider.js"></script>
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
 </head>
 <body>
@@ -17,9 +19,11 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="logo" href="#">
-                    <img alt="Brand" src="http://placehold.it/70x60">
-                </a>
+                <div class="logo">
+                    <a href="#">
+                        <img alt="Brand" src="~/Images/logo.png">
+                    </a>
+                </div>
             </div>
             <div class="navbar-collapse collapse">
                 @if (User.Identity.IsAuthenticated)
@@ -39,8 +43,9 @@
         </div>
     </div>
    
-    <div id="wrap">
-        <div id="main" class="container body-content">
+    <div class="wrap">
+        <div class="background-image"></div>
+        <div class="container body-content main">
             @RenderBody()
         </div>
     </div>

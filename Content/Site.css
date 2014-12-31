@@ -1,9 +1,8 @@
 ﻿html, body {
     padding-top: 40px;
     padding-bottom: 0px;
-    height: 100%;
+    overflow: hidden;
 }
-
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
@@ -17,14 +16,32 @@ textarea {
     max-width: 280px;
 }
 
-#wrap {
+.background-image {
     height: 100%;
-    background-color: darkgray;
+    background-size: cover;
+    background-position: center center;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+    z-index: -1;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
-#main {
+.wrap {
+    height: 100%;
+}
+
+.main {
     overflow: auto;
     padding-bottom: 150px;
+    z-index: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .footer {
@@ -42,6 +59,7 @@ textarea {
 
 .profile-dropdown {
     font-weight: bold;
+    color: black;
 }
 
 .mynavbar-header {
@@ -49,7 +67,15 @@ textarea {
 }
 
 .logo {
+    width: 90px;
+    height: 80px;
+}
+
+.logo img {
+    max-height: 100%;
+    max-width: 100%;
     vertical-align: middle;
+    margin-top: 7px;
 }
 
 .music {
@@ -58,14 +84,63 @@ textarea {
 
 .buttons {
     font-size: 72px;
+    color: black;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: white;
 }
 
 .blacklist-button {
+    width: 75px;
+    height: 75px;
     margin-left: 65%;
     margin-top: 90%;
+    cursor: pointer;
 }
 
 .next-track-button {
+    width: 75px;
+    height: 75px;
     margin-top: 90%;
-    margin-left: 10%
+    margin-left: 10%;
+    cursor: pointer;
+}
+
+.volume {
+    background-color: white;
+    width: 582px;
+    height: 30px;
+    border: 1px solid;
+    border-color: black;
+    float: left;
+    clear: right;
+    margin-top: 10px;
+}
+
+.volume-control {
+    width: auto;
+    margin-top: -19px;
+    margin-left: 60px;
+    height: 30px;
+    float: left;
+}
+
+#sliderObj {
+    width: 500px;
+}
+
+.scWidget {
+    float: left;
+    clear: both;
+    height: 582px;
+    border: 1px solid;
+    border-color: black;
+}
+
+.volume-icon {
+    width: 25px;
+    height: 25px;
+    float: left;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: -1px;
 }
