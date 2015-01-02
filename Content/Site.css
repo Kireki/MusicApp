@@ -37,24 +37,15 @@ textarea {
 
 .main {
     overflow: auto;
-    padding-bottom: 150px;
+    padding-bottom: 1%;
     z-index: 0;
     position: fixed;
     left: 0;
     right: 0;
 }
 
-.footer {
-    position: relative;
-    margin-top: -150px;
-    height: 150px;
-    clear: both;
-    padding-top: 20px;
-}
-
 .mynavbar {
-    height: 80px;
-    padding-bottom: 0px;
+    height: 9%;
 }
 
 .profile-dropdown {
@@ -67,8 +58,8 @@ textarea {
 }
 
 .logo {
-    width: 90px;
-    height: 80px;
+    max-width: 90px;
+    max-height: 80px;
 }
 
 .logo img {
@@ -131,7 +122,7 @@ textarea {
 .scWidget {
     float: left;
     clear: both;
-    height: 582px;
+    max-height: 582px;
     border: 1px solid;
     border-color: black;
 }

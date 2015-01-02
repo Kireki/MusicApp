@@ -4,12 +4,10 @@ using MusicApp.Models.Interfaces;
 
 namespace MusicApp.Models
 {
-    public class Track : ITrack
+    public class BlacklistedTrack : ITrack
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public string ArtworkUrl { get; set; }
-        public virtual ICollection<User> Users { get; set; }
+        public ICollection<User> Users { get; set; }
     }
 }

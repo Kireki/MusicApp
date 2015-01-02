@@ -59,8 +59,7 @@ namespace MusicApp.Controllers
         
         public LikedFbArtists GetFbArtistLikes()
         {
-            var currentUser = (User) Session["CurrentUser"];
-
+            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             try
             {
                 var fbcl = new FacebookClient(currentUser.FacebookAccessToken);
@@ -324,14 +323,10 @@ namespace MusicApp.Controllers
                 return RedirectToAction("Login", "Home");
             }
 
-            if (Session["CurrentUser"] == null)
-            {
-                Session["CurrentUser"] = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
-            }
-
             var fbArtistsResult = GetFbArtistLikes();
             if (fbArtistsResult == null)
             {
+                Debug.WriteLine("fb artists is null");
                 return RedirectToAction("Login", "Home");
             }
 
@@ -348,8 +343,23 @@ namespace MusicApp.Controllers
                 }
             }
 
+            var snippetWatch = new Stopwatch();
+            snippetWatch.Start();
+
             var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
             var userTracks = currentUser.Tracks.ToList();
+            var blacklisted = currentUser.BlacklistedTracks.ToList();
+            foreach (var blacklistedTrack in blacklisted)
+            {
+                foreach (var track in userTracks)
+                {
+                    if (track.Id == blacklistedTrack.Id)
+                    {
+                        userTracks.Remove(track);
+                        break;
+                    }
+                }
+            }
             userTracks.Shuffle();
             var finalTracks = userTracks.Select(track => new
             {
@@ -361,6 +371,9 @@ namespace MusicApp.Controllers
             ViewBag.Tracks = tracksJson;
             ViewBag.First = finalTracks.First().Id;
             ViewBag.FullName = currentUser.FacebookName;
+
+            snippetWatch.Stop();
+            Debug.WriteLine("Snippet: " + snippetWatch.Elapsed);
 
 #region olderVersionsOfCode
             //            foreach (var artist in fbArtistsResult.data)
@@ -401,8 +414,29 @@ namespace MusicApp.Controllers
 #endregion
 
             watch.Stop();
-            Debug.WriteLine(watch.Elapsed);
+            Debug.WriteLine("Total: " + watch.Elapsed);
             return View();
+        }
+
+        [HttpPost]
+        public void Blacklist(int trackId)
+        {
+            if (!Request.IsAjaxRequest()) return;
+            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName);
+            if (currentUser == null) return;
+            var trackToBlacklist = new BlacklistedTrack()
+            {
+                Id = trackId
+            };
+            try
+            {
+                currentUser.BlacklistedTracks.Add(trackToBlacklist);
+                _db.SaveChangesAsync();
+            }
+            catch (InvalidOperationException)
+            {
+                Debug.WriteLine("unable to add");
+            }
         }
 
 
@@ -411,7 +445,7 @@ namespace MusicApp.Controllers
         //GET: Login
         public ActionResult Login(string returnUrl)
         {
-            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
+            if (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null)
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -427,7 +461,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> Login(LoginModel model)
         {
-            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
+            if (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null)
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -466,7 +500,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public ActionResult FacebookLogin()
         {
-            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
+            if (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null)
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -485,7 +519,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> FacebookCallback()
         {
-            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
+            if (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null)
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -544,7 +578,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public ActionResult Register()
         {
-            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
+            if (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null)
             {
                 return RedirectToAction("Index", "Home");
             }
@@ -555,7 +589,7 @@ namespace MusicApp.Controllers
         [AllowAnonymous]
         public async Task<ActionResult> Register(RegisterModel model)
         {
-            if (User.Identity.IsAuthenticated && (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null))
+            if (CurrentUserClaims != null && _db.Users.FirstOrDefault(u => u.UserName == CurrentUserClaims.UserName) != null)
             {
                 return RedirectToAction("Index", "Home");
             }

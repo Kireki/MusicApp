@@ -137,6 +137,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
     <None Include="Scripts\jquery-2.1.1-vsdoc.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -171,6 +172,8 @@
     <Compile Include="HelperClasses\Shuffle.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Artist.cs" />
+    <Compile Include="Models\BlacklistedTrack.cs" />
+    <Compile Include="Models\Interfaces\ITrack.cs" />
     <Compile Include="Models\Tag.cs" />
     <Compile Include="ViewModels\LoginModel.cs" />
     <Compile Include="Models\Track.cs" />

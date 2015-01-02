@@ -14,7 +14,9 @@ namespace MusicApp
         public DbSet<User> Users { get; set; }
         public DbSet<Artist> Artists { get; set; }
         public DbSet<Track> Tracks { get; set; }
-        public DbSet<Tag> Tags { get; set; } 
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<BlacklistedTrack> BlacklistedTracks { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -32,6 +34,11 @@ namespace MusicApp
                 .HasMany(t => t.Tags)
                 .WithMany(u => u.Users)
                 .Map(l => l.MapLeftKey("UserID").MapRightKey("TagName").ToTable("UserTags"));
+
+            modelBuilder.Entity<User>()
+                .HasMany(b => b.BlacklistedTracks)
+                .WithMany(u => u.Users)
+                .Map(l => l.MapLeftKey("UserID").MapRightKey("BlacklistedTrackID").ToTable("UserBlacklistedTracks"));
         }
     }
 }
