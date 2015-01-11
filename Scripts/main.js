@@ -10,7 +10,10 @@
         visual: true,
         hide_related: true,
     });
-    scWidget.bind(SC.Widget.Events.FINISH, NextTrack);
+    scWidget.bind(SC.Widget.Events.FINISH, function() {
+        console.log("Next track");
+        NextTrack();
+    });
     scWidget.bind(SC.Widget.Events.READY, function () {
         var vol = window.currentVolume;
         scWidget.setVolume(vol);
