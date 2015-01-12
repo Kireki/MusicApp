@@ -26,7 +26,7 @@ namespace MusicApp.Controllers
         public const string FbAppSecret = "bfa4057d2c74fc3c2086f2c10576255f";
         public const double TagStrictness = 10;
         public const string LastFmUrl = "http://ws.audioscrobbler.com/2.0/?method=artist.gettoptags&artist={0}&api_key={1}&format=json";
-        public const string ScUrl = "http://api.soundcloud.com/tracks.json?genres={0}&client_id={1}";
+        public const string ScUrl = "http://api.soundcloud.com/tracks.json?tags={0}&limit=1&client_id={1}";
     }
     public class HomeController : AppController
     {
@@ -164,37 +164,38 @@ namespace MusicApp.Controllers
             return null;
         }
 
-        public List<Track> AddNewTracks(List<Track> tracks)
-        {
-            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
-            var tracksToAdd = new List<Track>();
-            foreach (var track in tracks)
-            {
-                Track check = new Track
-                {
-                    Id = track.Id,
-                    Name = track.Name,
-                    ArtworkUrl = track.ArtworkUrl
-                };
-                if (currentUser.Tracks.FirstOrDefault(t => t.Name == check.Name) == null)
-                {
-                    tracksToAdd.Add(check);
-                }
-            }
-            if (tracksToAdd.Count > 0)
-            {
-                foreach (var track in tracksToAdd)
-                {
-                    currentUser.Tracks.Add(track);
-                    Debug.WriteLine(track.Name + " - track added");
-                }
-                _db.SaveChanges();
-                return tracksToAdd;
-            }
-            _db.SaveChanges();
-            return null;
-        }
-
+        #region AddingTracksToDb
+//        public List<Track> AddNewTracks(List<Track> tracks)
+//        {
+//            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+//            var tracksToAdd = new List<Track>();
+//            foreach (var track in tracks)
+//            {
+//                Track check = new Track
+//                {
+//                    Id = track.Id,
+//                    Name = track.Name,
+//                    ArtworkUrl = track.ArtworkUrl
+//                };
+//                if (currentUser.Tracks.FirstOrDefault(t => t.Name == check.Name) == null)
+//                {
+//                    tracksToAdd.Add(check);
+//                }
+//            }
+//            if (tracksToAdd.Count > 0)
+//            {
+//                foreach (var track in tracksToAdd)
+//                {
+//                    currentUser.Tracks.Add(track);
+//                    Debug.WriteLine(track.Name + " - track added");
+//                }
+//                _db.SaveChanges();
+//                return tracksToAdd;
+//            }
+//            _db.SaveChanges();
+//            return null;
+//        }
+        #endregion
 
 
         #region unusedGetArtistsMethod
@@ -248,7 +249,9 @@ namespace MusicApp.Controllers
 
         public string GetData(string data, string apiKey, string url)
         {
+            Debug.WriteLine(url);
             var urlBuilder = String.Format(url, data.Replace(" ", "%20"), apiKey);
+            Debug.WriteLine(urlBuilder);
             var client = new RestClient(urlBuilder);
             var request = new RestRequest();
             var response = client.Execute(request);
@@ -280,38 +283,43 @@ namespace MusicApp.Controllers
             }
             return artistTags;
         }
-
-        public List<Track> GetTracks(List<Tag> genreTags)
-        {
-            var tracks = new List<Track>();
-            foreach (var tag in genreTags)
-            {
-                List<SCTracks> tracksOfTagGenre =
-                    JsonConvert.DeserializeObject<List<SCTracks>>(GetData(tag.Name, Constants.SoundCloud,
-                        Constants.ScUrl)).ToList();
-                foreach (var track in tracksOfTagGenre)
-                {
-                    if (String.IsNullOrEmpty(track.track_type) || track.track_type == "original" || track.track_type == "remix" || track.track_type == "live")
-                    {
-                        if (tracks.FirstOrDefault(t => t.Name == track.title) == null)
-                        {
-                            var bigArtwork = track.artwork_url;
-                            if (bigArtwork != null)
-                            {
-                                bigArtwork = bigArtwork.Replace("large", "t500x500");
-                            }
-                            tracks.Add(new Track
-                            {
-                                Id = track.id,
-                                Name = track.title,
-                                ArtworkUrl = bigArtwork
-                            });
-                        }
-                    }
-                }
-            }
-            return tracks;
-        }
+        #region oldGetTracks method
+//        public List<Track> GetTracks(List<Tag> genreTags)
+//        {
+//            var tracks = new List<Track>();
+//            foreach (var tag in genreTags)
+//            {
+//                List<SCTracks> tracksOfTagGenre =
+//                    JsonConvert.DeserializeObject<List<SCTracks>>(GetData(tag.Name, Constants.SoundCloud,
+//                        Constants.ScUrl)).ToList();
+//                foreach (var track in tracksOfTagGenre)
+//                {
+//                    if (String.IsNullOrEmpty(track.track_type) || track.track_type == "original" || track.track_type == "remix" || track.track_type == "live")
+//                    {
+//                        if (tracks.FirstOrDefault(t => t.Name == track.title) == null)
+//                        {
+//                            var bigArtwork = track.artwork_url;
+//                            if (bigArtwork != null)
+//                            {
+//                                bigArtwork = bigArtwork.Replace("large", "t500x500");
+//                            }
+//                            if (tag.Name == "alternative rock")
+//                            {
+//                                Debug.WriteLine(track.title + " | " + track.user.username);
+//                            }
+//                            tracks.Add(new Track
+//                            {
+//                                Id = track.id,
+//                                Name = track.title,
+//                                ArtworkUrl = bigArtwork
+//                            });
+//                        }
+//                    }
+//                }
+//            }
+//            return tracks;
+//        }
+        #endregion
 
         // GET: Home
         public ActionResult Index()
@@ -335,43 +343,19 @@ namespace MusicApp.Controllers
             if (newArtistList != null)
             {
                 var tags = GetArtistTags(newArtistList);
-                var newTags = AddNewTags(tags);
-                if (newTags != null)
-                {
-                    var tracks = GetTracks(newTags);
-                    var newTracks = AddNewTracks(tracks);
-                }
+                AddNewTags(tags);
             }
 
             var snippetWatch = new Stopwatch();
             snippetWatch.Start();
-
             var currentUser = _db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
-            var userTracks = currentUser.Tracks.ToList();
-            var blacklisted = currentUser.BlacklistedTracks.ToList();
-            foreach (var blacklistedTrack in blacklisted)
-            {
-                foreach (var track in userTracks)
-                {
-                    if (track.Id == blacklistedTrack.Id)
-                    {
-                        userTracks.Remove(track);
-                        break;
-                    }
-                }
-            }
-            userTracks.Shuffle();
-            var finalTracks = userTracks.Select(track => new
-            {
-                track.Id,
-                track.Name,
-                track.ArtworkUrl
-            });
-            string tracksJson = JsonConvert.SerializeObject(finalTracks);
-            ViewBag.Tracks = tracksJson;
-            ViewBag.First = finalTracks.First().Id;
+            var userTags = currentUser.Tags.ToList();
+            var tagArray = userTags.Select(tag => tag.Name).ToArray();
+            var tagString = String.Join(",", tagArray).Replace(" ","+");
+            Session["UserTags"] = tagString;
+            Debug.WriteLine(tagString);
+            Debug.WriteLine(Session["UserTags"]);
             ViewBag.FullName = currentUser.FacebookName;
-
             snippetWatch.Stop();
             Debug.WriteLine("Snippet: " + snippetWatch.Elapsed);
 
@@ -439,7 +423,28 @@ namespace MusicApp.Controllers
             }
         }
 
-
+        public string GetNextTrack()
+        {
+            if (!Request.IsAjaxRequest()) return null;
+            var rnd = new Random();
+            var offset = rnd.Next(1, 8001);
+            var url = Constants.ScUrl + "&offset=" + offset;
+            var track = JsonConvert.DeserializeObject<SCTracks[]>(GetData((string)Session["UserTags"], Constants.SoundCloud, url));
+            Debug.WriteLine(track[0].id);
+            var checkable = track[0].id;
+            var currentUser = _db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
+            var blacklisted = currentUser.BlacklistedTracks;
+            if (blacklisted.FirstOrDefault(t => t.Id == checkable) != null)
+            {
+                GetNextTrack();
+            }
+            Debug.WriteLine(track[0].id);
+            return JsonConvert.SerializeObject(new
+            {
+                id = track[0].id,
+                artwork = track[0].artwork_url
+            });
+        }
 
         [AllowAnonymous]
         //GET: Login

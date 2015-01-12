@@ -6,12 +6,7 @@
 
 
 <script type="text/javascript">
-    @{
-        string safeJsonString = ViewBag.Tracks;
-        safeJsonString = safeJsonString.Replace("\\", "\\\\").Replace("'", "\\'");
-    }
-    var firstTrack = '@ViewBag.First';
-    var tracks = JSON.parse('@Html.Raw(safeJsonString)');
+    var tagList = "@ViewBag.TagListString";
 </script>
 <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
 
@@ -23,7 +18,7 @@
     </div>
     <div class="col-md-6">
         <div class="scWidget">
-            <iframe class="SCiframe" width="580" height="580" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/@ViewBag.First&amp;auto_play=true&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=true&amp;hide_related=true&amp;visual=true&amp;start_track=0&amp;callback=true"></iframe>
+            <iframe class="SCiframe" width="580" height="580" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http://api.soundcloud.com/tracks/&amp;auto_play=true&amp;buying=true&amp;liking=true&amp;download=true&amp;sharing=true&amp;show_artwork=true&amp;show_comments=false&amp;show_playcount=false&amp;show_user=true&amp;hide_related=true&amp;visual=true&amp;start_track=0&amp;callback=true"></iframe>
         </div>
         <div class="volume">
             <div class="volume-icon">
@@ -41,4 +36,4 @@
     </div>
 </div>
 
-<script type="text/javascript" src="~/Scripts/main.js"></script>
+<script type="text/javascript" src="~/Scripts/music.js"></script>
