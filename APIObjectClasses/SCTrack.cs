@@ -18,7 +18,7 @@ namespace MusicApp.APIObjectClasses
         public string avatar_url { get; set; }
     }
 
-    public class SCTracks
+    public class SCTrack
     {
         public string kind { get; set; }
         public int id { get; set; }

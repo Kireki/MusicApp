@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
@@ -249,9 +250,7 @@ namespace MusicApp.Controllers
 
         public string GetData(string data, string apiKey, string url)
         {
-            Debug.WriteLine(url);
             var urlBuilder = String.Format(url, data.Replace(" ", "%20"), apiKey);
-            Debug.WriteLine(urlBuilder);
             var client = new RestClient(urlBuilder);
             var request = new RestRequest();
             var response = client.Execute(request);
@@ -351,10 +350,7 @@ namespace MusicApp.Controllers
             var currentUser = _db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
             var userTags = currentUser.Tags.ToList();
             var tagArray = userTags.Select(tag => tag.Name).ToArray();
-            var tagString = String.Join(",", tagArray).Replace(" ","+");
-            Session["UserTags"] = tagString;
-            Debug.WriteLine(tagString);
-            Debug.WriteLine(Session["UserTags"]);
+            Session["UserTags"] = tagArray;
             ViewBag.FullName = currentUser.FacebookName;
             snippetWatch.Stop();
             Debug.WriteLine("Snippet: " + snippetWatch.Elapsed);
@@ -429,20 +425,25 @@ namespace MusicApp.Controllers
             var rnd = new Random();
             var offset = rnd.Next(1, 8001);
             var url = Constants.ScUrl + "&offset=" + offset;
-            var track = JsonConvert.DeserializeObject<SCTracks[]>(GetData((string)Session["UserTags"], Constants.SoundCloud, url));
-            Debug.WriteLine(track[0].id);
-            var checkable = track[0].id;
+            var tags = (string[]) Session["UserTags"];
+            var tag = tags[rnd.Next(tags.Length)];
+            var des = new System.Web.Script.Serialization.JavaScriptSerializer();
+            var jsonStr = GetData(tag, Constants.SoundCloud, url);
+            Debug.WriteLine(jsonStr);
+            List<SCTrack> track = des.Deserialize<List<SCTrack>>(jsonStr);
+            Debug.WriteLine("id: " + track.First().id);
+            var checkable = track.First();
             var currentUser = _db.Users.FirstOrDefault(u => u.UserName == User.Identity.Name);
             var blacklisted = currentUser.BlacklistedTracks;
-            if (blacklisted.FirstOrDefault(t => t.Id == checkable) != null)
+            if (blacklisted.FirstOrDefault(t => t.Id == checkable.id) != null)
             {
                 GetNextTrack();
             }
-            Debug.WriteLine(track[0].id);
+            Debug.WriteLine(tag);
             return JsonConvert.SerializeObject(new
             {
-                id = track[0].id,
-                artwork = track[0].artwork_url
+                id = checkable.id,
+                artwork = checkable.artwork_url
             });
         }
 

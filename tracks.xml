@@ -1,0 +1,3104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tracks next-href="https://api.soundcloud.com/tracks.xml?client_id=f31b372d38cde9769c9e54a8e29bc8aa&amp;genres=80s&amp;limit=50&amp;offset=50" type="array">
+  <track>
+    <kind>track</kind>
+    <id type="integer">160272410</id>
+    <created-at type="datetime">2014-07-25T18:25:23Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">230342</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">9211845</original-content-size>
+    <last-modified type="datetime">2014-12-13T00:08:10Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>kiesza hideaway remix "mitch murder"</tag-list>
+    <permalink>kiesza-hideaway-mitch-murder-remix-free-download</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Kiesza - Hideaway (Mitch Murder Remix) FREE DOWNLOAD</title>
+    <description>Pre-Order Mitch Murder's new album Interceptor on iTunes and instantly receive "Breakazoid," "Saturdays," "The Touch" and "Race Day": smarturl.it/InterceptorLP
+
+Also available for pre-order is the limited edition Interceptor Bundle! Check out whats included below and pre-order yours today! bit.ly/1pJMPmx
+
+Bundle Includes:
+- Interceptor 2xLP Vinyl Album
+- Breeze Flexi Disc
+- Limited Edition T-Shirt
+- Clear Vinyl Sticker
+- Instant download of all Instant Grat tracks
+- Full digital album delivered on 7/29
+
+Watch The Album Trailer HERE: youtu.be/MmjxrRNYntc</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160272410</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/kiesza-hideaway-mitch-murder-remix-free-download</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086216787-ywokam-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/FDGNIZJvEkEt_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160272410/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/160272410/download</download-url>
+    <playback-count type="integer">630879</playback-count>
+    <download-count type="integer">100530</download-count>
+    <favoritings-count type="integer">12820</favoritings-count>
+    <comment-count type="integer">413</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160272410/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">75231946</id>
+    <created-at type="datetime">2013-01-16T23:05:54Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">318200</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">13030785</original-content-size>
+    <last-modified type="datetime">2015-01-14T10:15:13Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>mitch-murder-breeze</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/breeze</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>BUY THIS TRACK</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Breeze</title>
+    <description>Breeze is now available on all digital retailers!
+Support on iTunes: http://smarturl.it/breeze
+Support on Beatport: http://btprt.dj/1AQZ7vg
+Support on Google Play: http://bit.ly/1qeHfFL
+Support on Amazon: http://amzn.to/VLVPcW
+&#8212;-
+
+Listen on Youtube: https://www.youtube.com/watch?v=6KF4nfrYpuU
+Listen on Spotify: Coming Soon
+Listen on Rdio: Coming Soon
+
+Perhaps one of our favorite Mitch Murder gems ever, &#8220;Breeze,&#8221; is available for purchase at last. You&#8217;ll find your imagination hopping into the back of a bright red &#8217;87 Corvette, Mitch Murder behind the wheel as you coast along the Pacific Coast Highway beneath a beautiful blue sky underscored by a glittering coastline. The soundtrack to the best memories of summer, &#8220;Breeze&#8221; is happiness personified in song.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Twitter: https://twitter.com/#!/mitch_murder
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+
+Rep Mad Decent with new gear!
+http://www.maddecentmerch.com</description>
+    <label-name>Mad Decent</label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url>http://www.youtube.com/watch?v=_hF5_o-lYDA</video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/75231946</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/mitch-murder-breeze</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000089178841-5a2255-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/ze44HK8LmLqu_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/75231946/stream</stream-url>
+    <playback-count type="integer">248116</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">5056</favoritings-count>
+    <comment-count type="integer">261</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/75231946/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">116670811</id>
+    <created-at type="datetime">2013-10-23T11:01:36Z</created-at>
+    <user-id type="integer">63269784</user-id>
+    <duration type="integer">210357</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">8414646</original-content-size>
+    <last-modified type="datetime">2013-10-23T11:01:37Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>"party band"</tag-list>
+    <permalink>uptown-girl-billy-joel</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Uptown Girl (Billy Joel)</title>
+    <description>80's Party Band</description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/116670811</uri>
+    <user>
+      <id type="integer">63269784</id>
+      <kind>user</kind>
+      <permalink>ultimate80s</permalink>
+      <username>Ultimate80s</username>
+      <last-modified type="datetime">2013-10-23T10:54:34Z</last-modified>
+      <uri>https://api.soundcloud.com/users/63269784</uri>
+      <permalink-url>http://soundcloud.com/ultimate80s</permalink-url>
+      <avatar-url>https://a1.sndcdn.com/images/default_avatar_large.png</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/ultimate80s/uptown-girl-billy-joel</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000060845020-6j2k71-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/mWIKRZROgCSm_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/116670811/stream</stream-url>
+    <playback-count type="integer">250738</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">1882</favoritings-count>
+    <comment-count type="integer">26</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/116670811/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">139335183</id>
+    <created-at type="datetime">2014-03-13T06:32:44Z</created-at>
+    <user-id type="integer">6183291</user-id>
+    <duration type="integer">28292</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">7481390</original-content-size>
+    <last-modified type="datetime">2014-11-23T01:22:13Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>Rap Holiday "Mc Sven" "Dj Miker"</tag-list>
+    <permalink>the-drug-dealers-80s-rap-from</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>The Drug Dealer's 80's Rap (FROM RECAP VLOG #9)</title>
+    <description>The "Drug Dealer's 80's Rap" from Recap vlog #9! Find the original video here: http://www.youtube.com/watch?v=IzY3tUXgAe0
+
+Pretty much just a silly thing I made to prove how silly drug dealers in my area are. -____-</description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>aiff</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/139335183</uri>
+    <user>
+      <id type="integer">6183291</id>
+      <kind>user</kind>
+      <permalink>desandnate</permalink>
+      <username>DesandNate</username>
+      <last-modified type="datetime">2015-01-12T22:27:42Z</last-modified>
+      <uri>https://api.soundcloud.com/users/6183291</uri>
+      <permalink-url>http://soundcloud.com/desandnate</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000054846234-jkrjg3-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/desandnate/the-drug-dealers-80s-rap-from</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000073389313-il38a1-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/tKfuwsqcBb4m_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/139335183/stream</stream-url>
+    <playback-count type="integer">91995</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">2324</favoritings-count>
+    <comment-count type="integer">285</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/139335183/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">96771397</id>
+    <created-at type="datetime">2013-06-13T20:47:27Z</created-at>
+    <user-id type="integer">41912619</user-id>
+    <duration type="integer">98255</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">3928815</original-content-size>
+    <last-modified type="datetime">2015-01-01T17:56:02Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>Game of Thrones 80's Jon Snow Knows Nothing Beatbot Super Audio Time HBO</tag-list>
+    <permalink>game-of-thrones-main-theme-1986-remix</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://superaudiotime.bandcamp.com</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Game Of Thrones Main Theme (Super Audio Time! 1986 Remix)</title>
+    <description>http://superaudiotime.bandcamp.com/
+
+You kno nuffin jon snowz</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/96771397</uri>
+    <user>
+      <id type="integer">41912619</id>
+      <kind>user</kind>
+      <permalink>superaudiotime</permalink>
+      <username>Super Audio Time!</username>
+      <last-modified type="datetime">2014-10-01T11:17:35Z</last-modified>
+      <uri>https://api.soundcloud.com/users/41912619</uri>
+      <permalink-url>http://soundcloud.com/superaudiotime</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000042331061-0kufvf-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/superaudiotime/game-of-thrones-main-theme-1986-remix</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000083253596-03m2ww-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/bvJH977HO0gL_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/96771397/stream</stream-url>
+    <playback-count type="integer">188077</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">2088</favoritings-count>
+    <comment-count type="integer">108</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/96771397/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">156797647</id>
+    <created-at type="datetime">2014-07-01T06:40:17Z</created-at>
+    <user-id type="integer">3736371</user-id>
+    <duration type="integer">270313</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">10810586</original-content-size>
+    <last-modified type="datetime">2015-01-10T06:28:04Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>Rock kristine blue "miami nights 1984" bestrack "dance with the dead"</tag-list>
+    <permalink>kristine-the-deepest-blue</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>https://itunes.apple.com/us/album/the-deepest-blue-ep/id894159779</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Kristine - The Deepest Blue</title>
+    <description>Buy on iTunes: http://bit.ly/1lq1B
+YouTube: http://youtu.be/yDf6eXu47YI
+Remixes by: @miami-nights-1984, @bestrack &amp; @dancewiththedead
+Artwork by: Dimitris Perdikopoulos
+Mixed &amp; Mastered by: @highwaysuperstar
+
+LYRICS:
+Endless summer days
+That I spent with you
+Under the light and shades
+Eons old and new
+Watching the sun go down in the deepest blue
+Far in the distance sounds, only waves come through
+
+So tell it on the streets, tell it on the radio
+We&#8217;re endless like the sea, a never ending flow
+In the deepest blue
+In the deepest blue
+
+Endless summer days
+That I spent with you
+Into the salty haze
+Of our wildest youth
+Watching the sun go down in the deepest blue
+Far in the distance sounds, only waves come through
+
+So tell it on the streets, tell it on the radio
+We&#8217;re endless like the sea, a never ending flow
+In the deepest blue
+In the deepest blue
+
+Swimming in the deepest
+Swimming in the deepest
+We&#8217;re in the deepest blue
+
+So tell it on the streets, tell it on the radio
+We&#8217;re endless like the sea, a never ending flow
+And endless and endless.</description>
+    <label-name>TUFFEM UP! Records</label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">1</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/156797647</uri>
+    <user>
+      <id type="integer">3736371</id>
+      <kind>user</kind>
+      <permalink>kristineofficial</permalink>
+      <username>Kristine</username>
+      <last-modified type="datetime">2014-11-05T07:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/3736371</uri>
+      <permalink-url>http://soundcloud.com/kristineofficial</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000097423203-3et04z-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/kristineofficial/kristine-the-deepest-blue</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000083918473-u5686o-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/pnx7HZ4NK8U9_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/156797647/stream</stream-url>
+    <playback-count type="integer">122378</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">1810</favoritings-count>
+    <comment-count type="integer">84</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/156797647/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">8486603</id>
+    <created-at type="datetime">2010-12-28T03:18:30Z</created-at>
+    <user-id type="integer">919189</user-id>
+    <duration type="integer">2590060</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">62144426</original-content-size>
+    <last-modified type="datetime">2014-11-30T20:19:30Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>THEREALDJEPIC Rock</tag-list>
+    <permalink>01-dj-epic-80s-rock-mixtape</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>THE REAL DJ EPIC-EPIC 80'S ROCK</title>
+    <description> 1. The way eye are of the tiger - Timbaland/Survivor (Starsky)
+ 2. Sweet child o' mine - Guns N' Roses (Epic scratch)
+ 3. Round and Round - Ratt (Epic scratch)
+ 4. Hurts so good - John Mellencamp
+ 5. Shook me all night long - AC/DC
+ 6. Blow my fuse - Kix (Epic)
+ 7. I just wanna push your love - The Outfield (Farruggio)
+ 8. Summer of 69 - Bryan Adams
+ 9. Tush - ZZ Top
+10. Pour some sugar on me - Def Leppard
+11. Cult of personality - Living Colour
+12. My name is AC/DC - Eminem (Epic scratch)
+13. I love Rock N' Roll - Joan Jett
+14. We will rock you - Queen (Scene)
+15. I wanna rock - Twisted Sister (Epic scratch)
+16. Mr. Brownstone - Guns N' Roses (Epic scratch)
+17. Walk like this - Aerosmith/Mims (Danny Diggz)
+18. The Big Beat - Billy Squier
+19. Welcome to the Jungle - Guns N' Roses
+20. Wayward Son - Kansas (Serafin)
+21. Livin' on a Prayer - Bon Jovi
+22. Don't Stop Believin' - Journey
+23. Photograph - Def Leppard
+24. Jessy's Girl - Rick Springfield (Discotech)
+25. Are you gonna go my way - Lenny Kravitz
+26. Thunderstruck - AC/DC (Tittsworth)
+27. Nothin' but a good time - Poison
+28. Fight for your right - Beastie Boys
+29. Girls Girls Girls - Motley Crue (Epic)
+30. Good Times - INXS and Jimmy Barnes
+31. Free Bird - Lynyrd Skynyrd (Epic)</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>podcast</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/8486603</uri>
+    <user>
+      <id type="integer">919189</id>
+      <kind>user</kind>
+      <permalink>djepic-910</permalink>
+      <username>THE REAL DJ EPIC</username>
+      <last-modified type="datetime">2015-01-12T23:04:51Z</last-modified>
+      <uri>https://api.soundcloud.com/users/919189</uri>
+      <permalink-url>http://soundcloud.com/djepic-910</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000097114237-nfer8a-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/djepic-910/01-dj-epic-80s-rock-mixtape</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000006597416-0kmg70-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/xuzXQPkBBlTj_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/8486603/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/8486603/download</download-url>
+    <playback-count type="integer">43062</playback-count>
+    <download-count type="integer">5910</download-count>
+    <favoritings-count type="integer">872</favoritings-count>
+    <comment-count type="integer">58</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/8486603/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">101649007</id>
+    <created-at type="datetime">2013-07-19T00:13:46Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">254299</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">10171064</original-content-size>
+    <last-modified type="datetime">2014-11-20T03:26:01Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>the-touch-minimix-full-release</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>https://itunes.apple.com/se/album/the-touch-ep/id679980938</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>BUY THIS EP</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - The Touch (Minimix) - Full Release out on Mad Decent Jeffree's July 25th</title>
+    <description></description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/101649007</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/the-touch-minimix-full-release</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000053254422-hqrtzf-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/4oftTZ6ApZxO_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/101649007/stream</stream-url>
+    <playback-count type="integer">85333</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">2087</favoritings-count>
+    <comment-count type="integer">201</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/101649007/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697156</id>
+    <created-at type="datetime">2014-07-28T20:30:12Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">220755</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">9369503</original-content-size>
+    <last-modified type="datetime">2014-12-06T16:57:01Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>02-mitch-murder-high</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - High Performance</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00055</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">27</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697156</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/02-mitch-murder-high</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485285-h11wn9-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/sE9hNRddY8Id_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697156/stream</stream-url>
+    <playback-count type="integer">68281</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">863</favoritings-count>
+    <comment-count type="integer">23</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697156/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">105921663</id>
+    <created-at type="datetime">2013-08-17T22:24:23Z</created-at>
+    <user-id type="integer">7395112</user-id>
+    <duration type="integer">3579555</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">114534247</original-content-size>
+    <last-modified type="datetime">2014-04-15T14:23:34Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>90s michaeljackson banarama arethafranklin debarge gabband delegation tinacharles alphaville aceofbase spargo temptation cameo Toneloc vanillaice whitney housten Party Best hits funkycoldmedina cyndilauper danhartmann nightcrawler mojo eurythmics</tag-list>
+    <permalink>we-love-80s-and-90s-music-by</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>WE LOVE 80s and 90s Music by DJ Georgi</title>
+    <description>01. Ace of Base - all that she wants
+02. Dennis Edwards - don&#180;t look any further
+03. Alphaville - Big in Japan
+04. Tina Charles - I love to love (Remix)
+05. Sergio Mendes - Mas que Nada
+06. Wilson Pickett - Don&#180;t knock my Love
+07. KC &amp; the Sunshine - That&#180;s the way i like it
+08. Delegation - You and I
+09. Spargo - Just for you
+10. Rick Astley - Never gonna give you up
+11. The Gap Band - Big Fun
+12. Debarge - Rhythum of the Night
+13. The Temptation - treat her like a Lady
+14. Cameo - Word up
+15. Areatha Franklin - R.E.S.P.E.C.T.
+16. Vanilla Ice - Ice Ice Baby
+17. Michael Jackson - Billie Jean 
+18. Tone Loc - Funky Cold Medina
+19. Whitney Housten - how will i know
+20. Cyndi Lauper - Girl&#180;s just wanna have fun
+21. Dan Hartmann - Relight my Fire
+22. Banarama - Venus
+23. Eurythmics - Sweet Dreams
+24. Nightcrawler - Push the Feeling
+25. Mojo - lafy hear me tonight
+26. Michael Jackson - wanna be startin
+27. Lauryn Hill - ain&#180;t no Mountain high</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/105921663</uri>
+    <user>
+      <id type="integer">7395112</id>
+      <kind>user</kind>
+      <permalink>redstars-remix</permalink>
+      <username>redstars-remix</username>
+      <last-modified type="datetime">2015-01-12T21:48:09Z</last-modified>
+      <uri>https://api.soundcloud.com/users/7395112</uri>
+      <permalink-url>http://soundcloud.com/redstars-remix</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000013811270-7l2932-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/redstars-remix/we-love-80s-and-90s-music-by</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000076603069-xahkde-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/I7bRqsXiVbn2_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/105921663/stream</stream-url>
+    <playback-count type="integer">53924</playback-count>
+    <download-count type="integer">100</download-count>
+    <favoritings-count type="integer">659</favoritings-count>
+    <comment-count type="integer">22</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/105921663/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">172573306</id>
+    <created-at type="datetime">2014-10-17T14:30:14Z</created-at>
+    <user-id type="integer">385704</user-id>
+    <duration type="integer">595125</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">104958044</original-content-size>
+    <last-modified type="datetime">2014-11-17T08:48:51Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>House "Hip Hop" Electro Soul</tag-list>
+    <permalink>80s-mix-minimix</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>80s Mix (Minimix)</title>
+    <description>Out Now 
+Available from 
+iTunes: http://po.st/80sMixiTunes
+Amazon: http://po.st/80sMixOutNowCD 
+
+Featuring New Order, Spandau Ballet, Run-DMC, Chaka Khan, Sister Sledge, Inner City, Duran Duran, Blondie, Frankie Goes to Hollywood, The Human League + many more. </description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>wav</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/172573306</uri>
+    <user>
+      <id type="integer">385704</id>
+      <kind>user</kind>
+      <permalink>ministryofsound</permalink>
+      <username>Ministry of Sound</username>
+      <last-modified type="datetime">2015-01-13T20:34:25Z</last-modified>
+      <uri>https://api.soundcloud.com/users/385704</uri>
+      <permalink-url>http://soundcloud.com/ministryofsound</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000003055990-mroozh-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/ministryofsound/80s-mix-minimix</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000094272061-a1l6fs-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/arm0q1KNXDB9_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/172573306/stream</stream-url>
+    <playback-count type="integer">71074</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">1841</favoritings-count>
+    <comment-count type="integer">40</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/172573306/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697152</id>
+    <created-at type="datetime">2014-07-28T20:30:11Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">269608</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">11327195</original-content-size>
+    <last-modified type="datetime">2015-01-05T00:53:48Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>05-mitch-murder-interceptor</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Interceptor</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00056</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">27</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697152</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/05-mitch-murder-interceptor</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485289-yx416m-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/AoejktGTzjWm_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697152/stream</stream-url>
+    <playback-count type="integer">40038</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">545</favoritings-count>
+    <comment-count type="integer">22</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697152/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">75818267</id>
+    <created-at type="datetime">2013-01-21T11:29:15Z</created-at>
+    <user-id type="integer">7178988</user-id>
+    <duration type="integer">204740</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">8191917</original-content-size>
+    <last-modified type="datetime">2014-10-16T01:43:21Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>electro electronica idm pop triphop 80s 80's music 80'sstyle summer summertime cover covers</tag-list>
+    <permalink>tears-for-fears-mad-world</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Tears for Fears - Mad World (underwaters cover)</title>
+    <description>Credits for Tears for Fears for making such a good song.
+
+Thanks for your support. Feel free to have a little tour through the rest of the songs we've made, and stay tuned on the social networks or our mailing list, the album we're working on is going to have a similar vibe to this cover.
+
+Love,
+UW.</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>other</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url>https://www.youtube.com/watch?v=PBJ5cQiqbIY</video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/75818267</uri>
+    <user>
+      <id type="integer">7178988</id>
+      <kind>user</kind>
+      <permalink>underwaters</permalink>
+      <username>underwaters</username>
+      <last-modified type="datetime">2014-07-29T09:03:25Z</last-modified>
+      <uri>https://api.soundcloud.com/users/7178988</uri>
+      <permalink-url>http://soundcloud.com/underwaters</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000093928611-ennzuj-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/underwaters/tears-for-fears-mad-world</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000038798269-blbcsi-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/qG5rQp9e3Tvb_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/75818267/stream</stream-url>
+    <playback-count type="integer">68613</playback-count>
+    <download-count type="integer">40</download-count>
+    <favoritings-count type="integer">984</favoritings-count>
+    <comment-count type="integer">44</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/75818267/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">180045891</id>
+    <created-at type="datetime">2014-12-05T03:55:46Z</created-at>
+    <user-id type="integer">924635</user-id>
+    <duration type="integer">256886</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">10277533</original-content-size>
+    <last-modified type="datetime">2014-12-13T18:30:43Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>"rich boi" "Throw Some D's" Nehzuil</tag-list>
+    <permalink>day-10-rich-boi-throw-some-ds-funky-friday-remix</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Day 10 : Rich Boi - Throw Some D's (Funky Friday Remix)</title>
+    <description>Slappa d' bass 1x fo dat'a$$</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/180045891</uri>
+    <user>
+      <id type="integer">924635</id>
+      <kind>user</kind>
+      <permalink>nehzuil</permalink>
+      <username>nehzuil</username>
+      <last-modified type="datetime">2014-12-04T03:14:50Z</last-modified>
+      <uri>https://api.soundcloud.com/users/924635</uri>
+      <permalink-url>http://soundcloud.com/nehzuil</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000109681593-eefws8-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/nehzuil/day-10-rich-boi-throw-some-ds-funky-friday-remix</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000099256473-qz4pxk-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/8fkwSCGPe4ky_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/180045891/stream</stream-url>
+    <playback-count type="integer">43136</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">2424</favoritings-count>
+    <comment-count type="integer">71</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/180045891/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">123110077</id>
+    <created-at type="datetime">2013-12-03T23:26:47Z</created-at>
+    <user-id type="integer">9037402</user-id>
+    <duration type="integer">325098</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">57330044</original-content-size>
+    <last-modified type="datetime">2015-01-02T16:40:49Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>retro synth ballad vocoder scifi sci fi electronic synthwave</tag-list>
+    <permalink>chinatown</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://starcadian.bandcamp.com/track/chinatown</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Chinatown</title>
+    <description></description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>original</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>wav</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/123110077</uri>
+    <user>
+      <id type="integer">9037402</id>
+      <kind>user</kind>
+      <permalink>starcadian</permalink>
+      <username>ST&#8710;RC&#8710;DI&#8710;N</username>
+      <last-modified type="datetime">2014-12-27T17:49:33Z</last-modified>
+      <uri>https://api.soundcloud.com/users/9037402</uri>
+      <permalink-url>http://soundcloud.com/starcadian</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000010940304-s76kms-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/starcadian/chinatown</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000064377760-zkk6t6-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/3z1FkyonwhC0_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/123110077/stream</stream-url>
+    <playback-count type="integer">54366</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">1270</favoritings-count>
+    <comment-count type="integer">66</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/123110077/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">112756102</id>
+    <created-at type="datetime">2013-09-27T12:41:59Z</created-at>
+    <user-id type="integer">59829381</user-id>
+    <duration type="integer">228305</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">9134476</original-content-size>
+    <last-modified type="datetime">2013-10-09T23:27:58Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>Covers</tag-list>
+    <permalink>footloose</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Footloose</title>
+    <description>80s Pop Covers</description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/112756102</uri>
+    <user>
+      <id type="integer">59829381</id>
+      <kind>user</kind>
+      <permalink>footloose-80s-band</permalink>
+      <username>Footloose 80s Band</username>
+      <last-modified type="datetime">2014-11-18T10:07:31Z</last-modified>
+      <uri>https://api.soundcloud.com/users/59829381</uri>
+      <permalink-url>http://soundcloud.com/footloose-80s-band</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000056958837-wgvu4n-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/footloose-80s-band/footloose</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000059749855-44mpcn-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/uzS5KZtqPWHU_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/112756102/stream</stream-url>
+    <playback-count type="integer">59335</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">525</favoritings-count>
+    <comment-count type="integer">15</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/112756102/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">101646376</id>
+    <created-at type="datetime">2013-07-18T23:48:07Z</created-at>
+    <user-id type="integer">47891243</user-id>
+    <duration type="integer">264958</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">5298187</original-content-size>
+    <last-modified type="datetime">2013-07-18T23:48:11Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>soda-stereo-de-musica-ligera</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Soda Stereo De Musica Ligera En Vivo</title>
+    <description></description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/101646376</uri>
+    <user>
+      <id type="integer">47891243</id>
+      <kind>user</kind>
+      <permalink>user761583761</permalink>
+      <username>user761583761</username>
+      <last-modified type="datetime">2014-06-07T14:33:41Z</last-modified>
+      <uri>https://api.soundcloud.com/users/47891243</uri>
+      <permalink-url>http://soundcloud.com/user761583761</permalink-url>
+      <avatar-url>https://a1.sndcdn.com/images/default_avatar_large.png</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/user761583761/soda-stereo-de-musica-ligera</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000053252487-xfuwt8-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/Gtuyyb4lgkRU_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/101646376/stream</stream-url>
+    <playback-count type="integer">102739</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">538</favoritings-count>
+    <comment-count type="integer">6</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/101646376/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697151</id>
+    <created-at type="datetime">2014-07-28T20:30:10Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">301376</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">12600224</original-content-size>
+    <last-modified type="datetime">2014-12-06T16:57:00Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>06-mitch-murder-snow-crash</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Snow Crash</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00057</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">26</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697151</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/06-mitch-murder-snow-crash</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485280-5e8c39-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/qxiTI74WoxWW_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697151/stream</stream-url>
+    <playback-count type="integer">28489</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">260</favoritings-count>
+    <comment-count type="integer">6</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697151/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697150</id>
+    <created-at type="datetime">2014-07-28T20:30:10Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">205759</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">8768584</original-content-size>
+    <last-modified type="datetime">2014-11-27T07:02:06Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>08-mitch-murder-thanks-for</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Thanks For Playing</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00059</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">27</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697150</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/08-mitch-murder-thanks-for</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485286-9yyw53-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/APVXoVkQD4de_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697150/stream</stream-url>
+    <playback-count type="integer">22460</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">194</favoritings-count>
+    <comment-count type="integer">10</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697150/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">155860833</id>
+    <created-at type="datetime">2014-06-24T20:49:14Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">284500</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">11377919</original-content-size>
+    <last-modified type="datetime">2015-01-10T06:27:55Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>regain-control-mitch-murder-remix</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>https://shirobon.bandcamp.com/album/regain-control-the-remixes</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy this track</purchase-title>
+    <genre>80s</genre>
+    <title>Shirobon - Regain Control (Mitch Murder Remix)</title>
+    <description></description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/155860833</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/regain-control-mitch-murder-remix</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000083314097-i57myq-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/htN9ofVSPHoQ_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/155860833/stream</stream-url>
+    <playback-count type="integer">50719</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">1305</favoritings-count>
+    <comment-count type="integer">61</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/155860833/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">77675218</id>
+    <created-at type="datetime">2013-02-03T16:54:12Z</created-at>
+    <user-id type="integer">728971</user-id>
+    <duration type="integer">453737</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">18131148</original-content-size>
+    <last-modified type="datetime">2015-01-11T11:10:56Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>hall oates 80schild rework edit remix pop 80s dance groove soul</tag-list>
+    <permalink>exclusive-i-cant-go-for-that</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://www.junodownload.com/products/80s-child-night-vision-ep/2356284-02</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>I CAN'T GO 4 THAT - NIGHT VISION E.P - (80's Child)</title>
+    <description>Juno Review :
+
+Following a pair of well-received outings on Ruben &amp; Ra's Retrospective imprint, 1980s re-edit specialist Danny Worrall pops up on Midnight Riot with another five-track collection of electrofunk rubs. There's plenty of party-starting fodder on show, from the bustling horns and rubbery grooves of opener "Make You Mine" to the Prince style Purple Funk throb of "Hot", and shiny synths and looped vocals of "My Future is Clear". Arguably best of all, though, is the sumptuous '80s soul re cut "Secret Love". There's also a version of Hall &amp; Oates "I Can't Go For That", though it barely changes the original's winning formula. </description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2019</release-year>
+    <release-month type="integer">5</release-month>
+    <release-day type="integer">5</release-day>
+    <original-format>mp3</original-format>
+    <license>cc-by</license>
+    <uri>https://api.soundcloud.com/tracks/77675218</uri>
+    <user>
+      <id type="integer">728971</id>
+      <kind>user</kind>
+      <permalink>80s-child-edits</permalink>
+      <username>80s Child Edits</username>
+      <last-modified type="datetime">2015-01-13T22:47:19Z</last-modified>
+      <uri>https://api.soundcloud.com/users/728971</uri>
+      <permalink-url>http://soundcloud.com/80s-child-edits</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000120017666-amxoex-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/80s-child-edits/exclusive-i-cant-go-for-that</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000063706525-znfi63-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/sISHVkf85V9j_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/77675218/stream</stream-url>
+    <playback-count type="integer">43418</playback-count>
+    <download-count type="integer">815</download-count>
+    <favoritings-count type="integer">1214</favoritings-count>
+    <comment-count type="integer">201</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/77675218/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697142</id>
+    <created-at type="datetime">2014-07-28T20:30:08Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">349420</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">14525469</original-content-size>
+    <last-modified type="datetime">2014-12-03T23:13:20Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>11-mitch-murder-nocturne</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Nocturne</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00062</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">27</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697142</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/11-mitch-murder-nocturne</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485273-r8oxpe-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/CPQlbkWdLGux_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697142/stream</stream-url>
+    <playback-count type="integer">14414</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">154</favoritings-count>
+    <comment-count type="integer">4</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697142/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697144</id>
+    <created-at type="datetime">2014-07-28T20:30:09Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">209260</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">8908860</original-content-size>
+    <last-modified type="datetime">2014-11-27T07:02:06Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>10-mitch-murder-stages</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Stages</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00061</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">27</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697144</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/10-mitch-murder-stages</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485275-egrwrf-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/yNQjRfqrqjyw_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697144/stream</stream-url>
+    <playback-count type="integer">16869</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">122</favoritings-count>
+    <comment-count type="integer">3</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697144/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">24000133</id>
+    <created-at type="datetime">2011-09-23T18:08:52Z</created-at>
+    <user-id type="integer">4829804</user-id>
+    <duration type="integer">4294206</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">68527171</original-content-size>
+    <last-modified type="datetime">2012-10-05T12:18:47Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>80er madonna michael fett remix hotpepperpix</tag-list>
+    <permalink>80er</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>80er-mix</title>
+    <description>affengeiler 80s-mix aus meinem archiv...; Laufzeit 1h11min... 
+es gr&#252;&#223;t hotpepperpix </description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/24000133</uri>
+    <user>
+      <id type="integer">4829804</id>
+      <kind>user</kind>
+      <permalink>hotpepperpix</permalink>
+      <username>hotpepperpix</username>
+      <last-modified type="datetime">2014-06-17T05:21:44Z</last-modified>
+      <uri>https://api.soundcloud.com/users/4829804</uri>
+      <permalink-url>http://soundcloud.com/hotpepperpix</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000003801845-y2emhi-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/hotpepperpix/80er</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000011922461-r68bwc-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/fQhliYwdwsVT_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/24000133/stream</stream-url>
+    <playback-count type="integer">27024</playback-count>
+    <download-count type="integer">100</download-count>
+    <favoritings-count type="integer">386</favoritings-count>
+    <comment-count type="integer">9</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/24000133/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">9762663</id>
+    <created-at type="datetime">2011-01-28T23:28:31Z</created-at>
+    <user-id type="integer">2803572</user-id>
+    <duration type="integer">3947873</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">62996190</original-content-size>
+    <last-modified type="datetime">2013-10-25T17:57:10Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>HighEnergy Retro isco 80s Mix Megamix D Dracula DjAlexPerez ElDracula Chicago House ChicagoHouse Classic</tag-list>
+    <permalink>80s-high-energy-mix-dj-alex-perez-el-dracula</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>80's High Energy Mix - dj Alex Perez (El Dracula)</title>
+    <description>This is a classic 80's "Retro High Energy" mix inspired by Chicago's diverse neighborhoods. Enjoy and don't forget to leave comments. </description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/9762663</uri>
+    <user>
+      <id type="integer">2803572</id>
+      <kind>user</kind>
+      <permalink>djalexperez</permalink>
+      <username>djalexperez</username>
+      <last-modified type="datetime">2014-12-08T21:47:16Z</last-modified>
+      <uri>https://api.soundcloud.com/users/2803572</uri>
+      <permalink-url>http://soundcloud.com/djalexperez</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002476450-2zctoh-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/djalexperez/80s-high-energy-mix-dj-alex-perez-el-dracula</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000004451695-3v00ok-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/665ceOldiyxm_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/9762663/stream</stream-url>
+    <playback-count type="integer">23760</playback-count>
+    <download-count type="integer">102</download-count>
+    <favoritings-count type="integer">420</favoritings-count>
+    <comment-count type="integer">53</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/9762663/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697141</id>
+    <created-at type="datetime">2014-07-28T20:30:08Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">231309</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">9792450</original-content-size>
+    <last-modified type="datetime">2014-11-27T07:02:06Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>12-mitch-murder-traces-to</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Traces To Nowhere</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00063</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">26</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697141</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/12-mitch-murder-traces-to</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485276-t3zhtx-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/38USzeyM9cR8_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697141/stream</stream-url>
+    <playback-count type="integer">12801</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">138</favoritings-count>
+    <comment-count type="integer">15</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697141/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">160697146</id>
+    <created-at type="datetime">2014-07-28T20:30:09Z</created-at>
+    <user-id type="integer">14730</user-id>
+    <duration type="integer">262215</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">11030930</original-content-size>
+    <last-modified type="datetime">2014-12-06T16:57:00Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>8bit retro synth "Mitch Murder" Interceptor</tag-list>
+    <permalink>09-mitch-murder-in-the-fast</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://smarturl.it/InterceptorLP</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>Buy on iTunes</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - In The Fast Lane</title>
+    <description>Buy on iTunes: http://smarturl.it/InterceptorLP
+Buy on Beatport: http://btprt.dj/UFYOTI
+Buy on Amazon: http://amzn.to/1oeYs1H
+
+Listening to the music of&#160;Mitch&#160;Murder is something that warrants you&#8217;re full attention. You don&#8217;t simultaneously wash your dishes or hang out with friends, NO! You close your eyes or you find somewhere with fresh air and a view to allow yourself to aurally experience the infinite landscapes and scenarios that&#160;Mitch&#160;presents to your eardrums. If you were born around the early 80&#8217;s, you're instantly hit with nostalgia with the smells and emotions of your childhood, but that&#8217;s just the start. One minute you may find yourself coming up on an enemies hideout with Mr.T and the rest of the A*team, the next minute you'll be speeding away on a stolen top-secret motorcycle with a microchip in your pocket. Soon enough the dark of the night vanishes as you land face first on the sands of Venice Beach, 1984. As far as the eye can see there's bikini babes, freestyle skateboarding, remote control cars and a new dance called break-dancing.&#160;
+
+The b-boys popping moves create an atmospheric breakdown of all reality and suddenly you're thrusted into an 8-bit nintendo world and your arm has been rigged with a plasma blaster. Good thing you have your faithful robotic dog by your side. As the album concludes, the feels are endless as you round the last base and finally touch home plate to win the tournament in the 9th inning. Life slows to a halt as you see your crush in the stands. Your eyes lock, and before you know it you&#8217;ve spent hours that felt like minutes walking on the beach together and watching the sun set. As she tells you stories about her favorite music, her deadbeat dad and how you should run away together, the alarm on your calculator watch suddenly goes off. You glance down at your wrist and she and the world around her disappears, the ring of the watch morphs into the sound of your buzzing alarm clock flashing&#160;8:00AM. It was all a dream&#8230; that is until the next time you listen to&#160;Mitch&#160;Murder&#8217;s &#8220;Interceptor&#8221;.
+
+Mitch Murder
+Soundcloud: https://soundcloud.com/daataa
+Facebook: http://www.facebook.com/pages/mitch-murder/304065434705
+Twitter: https://twitter.com/#!/mitch_murder</description>
+    <label-name>Mad Decent</label-name>
+    <release>MAD216</release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc>US-Z4V-14-00060</isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">27</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/160697146</uri>
+    <user>
+      <id type="integer">14730</id>
+      <kind>user</kind>
+      <permalink>maddecent</permalink>
+      <username>Mad Decent</username>
+      <last-modified type="datetime">2015-01-13T00:57:22Z</last-modified>
+      <uri>https://api.soundcloud.com/users/14730</uri>
+      <permalink-url>http://soundcloud.com/maddecent</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000112599114-5etg3g-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/maddecent/09-mitch-murder-in-the-fast</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000086485279-w2muta-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/0YqE2raeowrd_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/160697146/stream</stream-url>
+    <playback-count type="integer">17564</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">107</favoritings-count>
+    <comment-count type="integer">6</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/160697146/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">112310411</id>
+    <created-at type="datetime">2013-09-25T00:05:42Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">317573</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">12700760</original-content-size>
+    <last-modified type="datetime">2014-11-28T06:24:23Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>gossip-culture-feat-quincy</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Gossip Culture feat. Quincy McCrary - Waiting (Mitch Murder Remix)</title>
+    <description>my remix of  https://soundcloud.com/gossipculture/gossip-culture-waiting-feat by gossip culture.</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/112310411</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/gossip-culture-feat-quincy</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000058572001-3otd6v-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/QJCwhbsD1mVY_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/112310411/stream</stream-url>
+    <playback-count type="integer">52227</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">1139</favoritings-count>
+    <comment-count type="integer">82</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/112310411/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">124243126</id>
+    <created-at type="datetime">2013-12-11T01:06:39Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">293696</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">11745723</original-content-size>
+    <last-modified type="datetime">2015-01-10T03:53:11Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>mitch-murder-just-till</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url>https://mitchmurder.bandcamp.com/track/mitch-murder-just-till-midnight-feat-miranda-carey</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>GET FLAC HERE</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Just till Midnight (feat. Miranda Carey) FREE DOWNLOAD</title>
+    <description>Vocals by https://soundcloud.com/miranda-carey | http://fb.com/mirandacareymusic</description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/124243126</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/mitch-murder-just-till</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000065022318-meojz7-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/0tmpUt6HsoAF_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/124243126/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/124243126/download</download-url>
+    <playback-count type="integer">50247</playback-count>
+    <download-count type="integer">2544</download-count>
+    <favoritings-count type="integer">1115</favoritings-count>
+    <comment-count type="integer">82</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/124243126/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">114006585</id>
+    <created-at type="datetime">2013-10-05T23:20:17Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">254717</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">10186735</original-content-size>
+    <last-modified type="datetime">2015-01-05T06:48:38Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>mitch-murder-killer-angels</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>https://mitchmurder.bandcamp.com/album/another-place-ep</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>BUY THIS TRACK</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Killer Angels</title>
+    <description></description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/114006585</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/mitch-murder-killer-angels</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000059422272-nr3igx-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/6jw1ie8RVQMz_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/114006585/stream</stream-url>
+    <playback-count type="integer">54136</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">1028</favoritings-count>
+    <comment-count type="integer">119</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/114006585/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">116929731</id>
+    <created-at type="datetime">2013-10-25T00:19:30Z</created-at>
+    <user-id type="integer">59294009</user-id>
+    <duration type="integer">308508</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">4935140</original-content-size>
+    <last-modified type="datetime">2013-10-25T00:19:56Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>"Dirty Dancing"</tag-list>
+    <permalink>ive-had-the-time-of-my-life-2</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>(I've Had) The Time Of My Life - Bill Medley &amp; Jennifer Warnes</title>
+    <description></description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/116929731</uri>
+    <user>
+      <id type="integer">59294009</id>
+      <kind>user</kind>
+      <permalink>ttdjfox</permalink>
+      <username>TTDJFox</username>
+      <last-modified type="datetime">2013-11-24T06:15:50Z</last-modified>
+      <uri>https://api.soundcloud.com/users/59294009</uri>
+      <permalink-url>http://soundcloud.com/ttdjfox</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000056849104-lq00w3-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/ttdjfox/ive-had-the-time-of-my-life-2</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000060987156-yt88ku-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/PoOBHdacAwwE_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/116929731/stream</stream-url>
+    <playback-count type="integer">175796</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">415</favoritings-count>
+    <comment-count type="integer">4</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/116929731/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">169461143</id>
+    <created-at type="datetime">2014-09-26T15:11:44Z</created-at>
+    <user-id type="integer">61561768</user-id>
+    <duration type="integer">191050</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">4619545</original-content-size>
+    <last-modified type="datetime">2014-09-26T15:21:32Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>"Classic Rock"</tag-list>
+    <permalink>eddy-grant-electric-avenue</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Eddy Grant - Electric Avenue</title>
+    <description></description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/169461143</uri>
+    <user>
+      <id type="integer">61561768</id>
+      <kind>user</kind>
+      <permalink>jorge-navarrete-5</permalink>
+      <username>Jorgss17</username>
+      <last-modified type="datetime">2014-11-03T14:09:21Z</last-modified>
+      <uri>https://api.soundcloud.com/users/61561768</uri>
+      <permalink-url>http://soundcloud.com/jorge-navarrete-5</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000067473676-uzz08w-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/jorge-navarrete-5/eddy-grant-electric-avenue</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000092191373-r9u8lf-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/FhKL3Pl9B8Zv_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/169461143/stream</stream-url>
+    <playback-count type="integer">43886</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">566</favoritings-count>
+    <comment-count type="integer">2</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/169461143/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">125125022</id>
+    <created-at type="datetime">2013-12-16T17:25:51Z</created-at>
+    <user-id type="integer">27117270</user-id>
+    <duration type="integer">321100</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">12846162</original-content-size>
+    <last-modified type="datetime">2015-01-11T20:02:34Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>synthwave pop powerpop "dana jean phoenix" "rosso corsa" "silent gloves" "jessy bullet"</tag-list>
+    <permalink>take-my-time-feat-dana-jean</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://rossocorsarecords.bandcamp.com/album/take-my-time</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>BUY ON BANDCAMP</purchase-title>
+    <genre>80s</genre>
+    <title>Take My Time (feat. Dana Jean Phoenix and Chris Page)</title>
+    <description> *** BUY THE ALBUM http://rossocorsarecords.bandcamp.com/album/take-my-time ***
+
+
+Take My Time featuring Dana Jean Phoenix and Christopher Page on vocals. Guitars by Jesse Bullet.
+From the upcoming album Take My Time, out December 2013 on Rosso Corsa Records.
+
+www.rossocorsarecords.com
+www.facebook.com/highwaysuperstar
+www.twitter.com/highwaysuperstar
+www.highwaysuperstar.com
+@dana-jean-phoenix
+www.danajeanphoenix.com
+
+Mastering by @silentgloves</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>original</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/125125022</uri>
+    <user>
+      <id type="integer">27117270</id>
+      <kind>user</kind>
+      <permalink>highwaysuperstar</permalink>
+      <username>Highway Superstar</username>
+      <last-modified type="datetime">2015-01-03T18:55:19Z</last-modified>
+      <uri>https://api.soundcloud.com/users/27117270</uri>
+      <permalink-url>http://soundcloud.com/highwaysuperstar</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000118659102-xbf1e5-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/highwaysuperstar/take-my-time-feat-dana-jean</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000065508183-rhlaxf-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/lxVtCshPZJdT_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/125125022/stream</stream-url>
+    <playback-count type="integer">33625</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">673</favoritings-count>
+    <comment-count type="integer">69</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/125125022/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">144681229</id>
+    <created-at type="datetime">2014-04-14T17:51:31Z</created-at>
+    <user-id type="integer">13599048</user-id>
+    <duration type="integer">2711711</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">64981514</original-content-size>
+    <last-modified type="datetime">2014-07-30T03:26:35Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>technic turntables rane62 Live</tag-list>
+    <permalink>i-love-the-80s-by-dj-bill-bara-33-songs-in-45-minutes</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>I Love The 80s by DJ Bill Bara - 33 songs in 45 minutes</title>
+    <description>You Dropped A Bomb On Me [BEATFREAKZ SHORT CUTZ] 126bpm
+Bizarre Love Triangle
+Don't You Want Me
+Billie Jean
+The_Goodfellas_Like_A_Virgin_DRUM_EDIT
+The_Goodfellas_Holiday_DRUM_EDIT
+Wild Thing Short
+Uptown Girl (Short Edit)
+Super Freak Short
+Dancing On The Ceiling Short
+Push It (Short Edit)
+No Parking On The Dance Floor [BEATFREAKZ SHORT CUTZ] 125bpm
+Sweet Dreams Short
+Let's Groove Tonight [BEATFREAKZ SHORT CUTZ] 125bpm
+It Takes Funk (Funkytown Mixshow Edit) (Vocal in)
+Lets Hear It For The Boy
+Footloose
+Africa (Short Edit)
+Whats Love Got To Do With It (Short Edit)
+Genius Of Love [BEATFREAKZ SHORT CUTZ] 103bpm
+Need You Tonight (Short Edit)
+Eye Of The Tiger (Short Edit)
+Heaven Is A Place On Earth (Short Edit)
+Sunglasses At Night (Short Edit)
+You Spin Me Round Short
+Girls Just Wanna Have Fun
+I Wanna Dance With Somebody Short
+What I Like About You (Wanderer Edit)
+Walkin On Sunshine (Short Edit)
+Waiting For A Star To Fall
+Wind Beneath My Wings
+MY SHARONA (SHORT EDIT)- 16BAR INTRO</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/144681229</uri>
+    <user>
+      <id type="integer">13599048</id>
+      <kind>user</kind>
+      <permalink>runningmixes</permalink>
+      <username>runningmixes</username>
+      <last-modified type="datetime">2015-01-01T17:19:14Z</last-modified>
+      <uri>https://api.soundcloud.com/users/13599048</uri>
+      <permalink-url>http://soundcloud.com/runningmixes</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000017210050-zxiptg-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/runningmixes/i-love-the-80s-by-dj-bill-bara-33-songs-in-45-minutes</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000076523938-zudd0v-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/P9SA1vVI4fp6_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/144681229/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/144681229/download</download-url>
+    <playback-count type="integer">16493</playback-count>
+    <download-count type="integer">4242</download-count>
+    <favoritings-count type="integer">244</favoritings-count>
+    <comment-count type="integer">6</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/144681229/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">57598169</id>
+    <created-at type="datetime">2012-08-26T06:02:16Z</created-at>
+    <user-id type="integer">13599048</user-id>
+    <duration type="integer">3794031</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">90889150</original-content-size>
+    <last-modified type="datetime">2014-07-30T03:26:37Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>80s remix "live dj" "80s rock" "80s pop" "the 80s were rad"</tag-list>
+    <permalink>80s-hits-mixed-by-dj-bill-bara</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>80s Hits Mixed by DJ Bill Bara</title>
+    <description>"Hits from the 80's Mixed" is a live recording by DJ Bill Bara at Rivers Casino in Pittsburgh on Friday August 24th, 2012. Using real turntables and vinyl hooked up to Serato DJ Software, Bill was able to blend, scratch, and mix your favorite 80s songs together in a new unique way making old tracks feel new again! Download more mixes from totally rad DJs at www.RunningMixes.com</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>live</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/57598169</uri>
+    <user>
+      <id type="integer">13599048</id>
+      <kind>user</kind>
+      <permalink>runningmixes</permalink>
+      <username>runningmixes</username>
+      <last-modified type="datetime">2015-01-01T17:19:14Z</last-modified>
+      <uri>https://api.soundcloud.com/users/13599048</uri>
+      <permalink-url>http://soundcloud.com/runningmixes</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000017210050-zxiptg-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/runningmixes/80s-hits-mixed-by-dj-bill-bara</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000029134748-z0ukzc-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/oGR5zWCeVLMH_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/57598169/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/57598169/download</download-url>
+    <playback-count type="integer">22790</playback-count>
+    <download-count type="integer">5885</download-count>
+    <favoritings-count type="integer">279</favoritings-count>
+    <comment-count type="integer">7</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/57598169/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">39161608</id>
+    <created-at type="datetime">2012-03-09T00:26:49Z</created-at>
+    <user-id type="integer">13323508</user-id>
+    <duration type="integer">265451</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">10602864</original-content-size>
+    <last-modified type="datetime">2014-12-22T22:03:31Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>You Are le cassette 80's synthpop</tag-list>
+    <permalink>you-are-you-are</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>me</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://telefuturenow.bandcamp.com/album/left-to-our-own-devices</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>You Are You Are</title>
+    <description></description>
+    <label-name>Telefuture</label-name>
+    <release>TF30 </release>
+    <track-type>original</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year type="integer">2014</release-year>
+    <release-month type="integer">7</release-month>
+    <release-day type="integer">10</release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/39161608</uri>
+    <user>
+      <id type="integer">13323508</id>
+      <kind>user</kind>
+      <permalink>le-cassette</permalink>
+      <username>Le Cassette</username>
+      <last-modified type="datetime">2014-08-05T17:33:24Z</last-modified>
+      <uri>https://api.soundcloud.com/users/13323508</uri>
+      <permalink-url>http://soundcloud.com/le-cassette</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000094127544-htnece-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/le-cassette/you-are-you-are</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000026003830-fdmjel-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/YmbmWdpt1QjL_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/39161608/stream</stream-url>
+    <playback-count type="integer">33214</playback-count>
+    <download-count type="integer">1</download-count>
+    <favoritings-count type="integer">703</favoritings-count>
+    <comment-count type="integer">138</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/39161608/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">100916405</id>
+    <created-at type="datetime">2013-07-13T18:15:36Z</created-at>
+    <user-id type="integer">5502759</user-id>
+    <duration type="integer">224465</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">4490470</original-content-size>
+    <last-modified type="datetime">2013-07-13T18:15:40Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>no-easy-way-out</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>No Easy Way Out</title>
+    <description></description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/100916405</uri>
+    <user>
+      <id type="integer">5502759</id>
+      <kind>user</kind>
+      <permalink>scottsellers</permalink>
+      <username>ScottSellers</username>
+      <last-modified type="datetime">2014-08-04T21:19:15Z</last-modified>
+      <uri>https://api.soundcloud.com/users/5502759</uri>
+      <permalink-url>http://soundcloud.com/scottsellers</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000031975969-hfrtfc-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/scottsellers/no-easy-way-out</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000052850106-rvpmlw-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/N5GdHrhFYtqY_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/100916405/stream</stream-url>
+    <playback-count type="integer">21545</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">212</favoritings-count>
+    <comment-count type="integer">5</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/100916405/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">150654157</id>
+    <created-at type="datetime">2014-05-21T22:48:43Z</created-at>
+    <user-id type="integer">13599048</user-id>
+    <duration type="integer">2713670</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">65028384</original-content-size>
+    <last-modified type="datetime">2014-07-30T03:26:34Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>90s battle dj bara pittsburgh remix live rane turntable reto run spin bike cycle cycling running mix music tempo bpm edit redrum mashup</tag-list>
+    <permalink>80s-vs-90s-part-2-dj-bill-bara-at-club-cycle</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>80s Vs 90s (Part 2) - DJ Bill Bara at Club Cycle</title>
+    <description>80s vs 90s Part 2 was recorded live by DJ Bill Bara at www.ClubCycleOnline.com
+
+Track Listing:
+1) Fugees - Ready Or Not (ROCK-IT! SCIENTISTS RE-DUTCH EDIT) (130bpm)
+2) Tiffany - I Think We're Alone Now (Mister Gray ReDrum) (131bpm)
+3) Blind Melon - No Rain (THDP Bmore Remix)(130bpm)
+4) Lipps Inc - Funkytown - ( JhapZ Bring The Funcky 80's Back 2014 Edit )(128bpm)
+5) Tag Team - WHOOMP THERE IT IS [8B INTRO] (129bpm)
+6) Michael Jackson - Beat It (DMS)(138bpm)
+7) Tina Turner - What's Love Got To Do With It (Personal Classic Hype)(98bpm)
+8) Ditty - Paperboy (1993) (99bpm)
+9) Tears for Fears - Shout (DMS) (99bpm)
+10) Notorious BIG - Mo Money Mo Problems (104bpm)
+11) INXS - Need You Tonight (Short Edit)(109bpm)
+12) Spice Girls - Wannabe (1997)(110bpm)
+13) Billy Ocean - Caribbean Queen (114bpm)
+14) Paula Abdul - Opposites Attract Short (118bpm)
+15) Madonna - Into The Groove (116bpm)
+16) Corona - Rhythm Of The Night Electro Mix (Supa Skip Long Break Edit) (125bpm)
+17) Cutting Crew - Died In Your Arms (Short Edit)(125bpm)
+18) Reel 2 Reel - I Like To Move It (123bpm)
+19) Marvin Gaye - Ain't No Mountain High Enough (128bpm)
+20) Aquagen - Barbie Girl 2011 (SJ Mix)(130bpm)
+21) Whitney Houston - How Will I Know - Van Hooft &amp; Forever Kid Bootleg (128bpm)
+22) Vengaboys - We Like To Party (136bpm)
+23) Smashing Pumpkins - Today (DJ Greg J ReDrum EDIT) (85bpm)</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/150654157</uri>
+    <user>
+      <id type="integer">13599048</id>
+      <kind>user</kind>
+      <permalink>runningmixes</permalink>
+      <username>runningmixes</username>
+      <last-modified type="datetime">2015-01-01T17:19:14Z</last-modified>
+      <uri>https://api.soundcloud.com/users/13599048</uri>
+      <permalink-url>http://soundcloud.com/runningmixes</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000017210050-zxiptg-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/runningmixes/80s-vs-90s-part-2-dj-bill-bara-at-club-cycle</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000080115355-ao5ysu-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/DC4FSVeDYgtU_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/150654157/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/150654157/download</download-url>
+    <playback-count type="integer">12023</playback-count>
+    <download-count type="integer">2370</download-count>
+    <favoritings-count type="integer">236</favoritings-count>
+    <comment-count type="integer">0</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/150654157/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">174791860</id>
+    <created-at type="datetime">2014-10-31T23:47:32Z</created-at>
+    <user-id type="integer">301588</user-id>
+    <duration type="integer">335233</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">13407111</original-content-size>
+    <last-modified type="datetime">2015-01-12T13:47:35Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>mitch-murder-savage-free-download</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url>https://mitchmurder.bandcamp.com/track/mitch-murder-savage</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>FLAC</purchase-title>
+    <genre>80s</genre>
+    <title>Mitch Murder - Savage (FREE DOWNLOAD)</title>
+    <description>Additional guitars by soundcloud.com/highwaysuperstar</description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/174791860</uri>
+    <user>
+      <id type="integer">301588</id>
+      <kind>user</kind>
+      <permalink>daataa</permalink>
+      <username>mitch murder</username>
+      <last-modified type="datetime">2015-01-08T20:53:48Z</last-modified>
+      <uri>https://api.soundcloud.com/users/301588</uri>
+      <permalink-url>http://soundcloud.com/daataa</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002574226-z7b99q-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/daataa/mitch-murder-savage-free-download</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000095751807-h4c04u-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/lB8XSZfTohrD_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/174791860/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/174791860/download</download-url>
+    <playback-count type="integer">22389</playback-count>
+    <download-count type="integer">1062</download-count>
+    <favoritings-count type="integer">760</favoritings-count>
+    <comment-count type="integer">42</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/174791860/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">94778625</id>
+    <created-at type="datetime">2013-05-31T09:07:45Z</created-at>
+    <user-id type="integer">41301987</user-id>
+    <duration type="integer">251242</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">44302030</original-content-size>
+    <last-modified type="datetime">2013-05-31T09:09:05Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>"The Jam" "Paul Weller" Mod Edit Pop GDFN</tag-list>
+    <permalink>the-jam-thats-entertainment-gdfn</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>The Jam - That's Entertainment GDFN Edit</title>
+    <description>Phil Asher &amp; Martin Lodge
+
+Playing a collection of cosmopolitan rhythms and melodies
+
+Friday 14th June
+9pm-3am
+
+&#163;5 All Night
+
+Anam Bar
+3 Chapel Market
+Islington
+London
+N1 9EZ
+
+"UNeXPeCt the eXPeCteD!"
+
+www.facebook.com/events/648545418506149/
+
+GDFN is Phil Asher &amp; Martin Lodge playing a collection of cosmopolitan rhythms and melodies.
+We are delighted to share some of them with you in the form of our own re-edits.
+
+@GDFNLondon
+www.twitter.com/GDFNLondon
+www.facebook.com/GDFNLOndon
+
+The Jam - That's Entertainment GDFN Edit
+Written by Paul Weller
+
+Dedicated to Jimmy Johnson R.I.P</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>wav</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/94778625</uri>
+    <user>
+      <id type="integer">41301987</id>
+      <kind>user</kind>
+      <permalink>gdfnedits</permalink>
+      <username>GDFN Edits</username>
+      <last-modified type="datetime">2014-02-11T05:19:46Z</last-modified>
+      <uri>https://api.soundcloud.com/users/41301987</uri>
+      <permalink-url>http://soundcloud.com/gdfnedits</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000038531904-mov387-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/gdfnedits/the-jam-thats-entertainment-gdfn</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000049415816-1hb3xg-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/Qlmke8QzigBM_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/94778625/stream</stream-url>
+    <playback-count type="integer">16775</playback-count>
+    <download-count type="integer">434</download-count>
+    <favoritings-count type="integer">292</favoritings-count>
+    <comment-count type="integer">10</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/94778625/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">117021691</id>
+    <created-at type="datetime">2013-10-25T16:05:54Z</created-at>
+    <user-id type="integer">50922326</user-id>
+    <duration type="integer">215111</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">3493058</original-content-size>
+    <last-modified type="datetime">2013-10-25T16:05:57Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>abdul-and-the-coffe-theory-ku</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>abdul and the coffe theory - Ku Cinta Kau Lebih Dari Kemarin</title>
+    <description></description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/117021691</uri>
+    <user>
+      <id type="integer">50922326</id>
+      <kind>user</kind>
+      <permalink>yulindapratiwi</permalink>
+      <username>yulindapratiwi</username>
+      <last-modified type="datetime">2014-06-20T08:09:45Z</last-modified>
+      <uri>https://api.soundcloud.com/users/50922326</uri>
+      <permalink-url>http://soundcloud.com/yulindapratiwi</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000090601825-31s5d8-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/yulindapratiwi/abdul-and-the-coffe-theory-ku</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000061038551-jw7j5t-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/5PrKxVZWLhKk_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/117021691/stream</stream-url>
+    <playback-count type="integer">29372</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">352</favoritings-count>
+    <comment-count type="integer">4</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/117021691/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">121926673</id>
+    <created-at type="datetime">2013-11-26T03:38:54Z</created-at>
+    <user-id type="integer">914387</user-id>
+    <duration type="integer">290169</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">11604635</original-content-size>
+    <last-modified type="datetime">2014-12-24T22:42:46Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>80's</tag-list>
+    <permalink>skull-and-shark</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url>http://lazerhawk.bandcamp.com</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title>PRESS TO BUY</purchase-title>
+    <genre>80s</genre>
+    <title>Skull And Shark</title>
+    <description>Art by the incredible Dave Rapoza!
+
+daverapoza.blogspot.com/</description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/121926673</uri>
+    <user>
+      <id type="integer">914387</id>
+      <kind>user</kind>
+      <permalink>lazerhawk</permalink>
+      <username>Lazerhawk</username>
+      <last-modified type="datetime">2014-10-28T20:47:08Z</last-modified>
+      <uri>https://api.soundcloud.com/users/914387</uri>
+      <permalink-url>http://soundcloud.com/lazerhawk</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000001155475-8jvpvy-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/lazerhawk/skull-and-shark</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000063734090-ar2i8t-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/v1vO9hgfwFc5_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/121926673/stream</stream-url>
+    <playback-count type="integer">38945</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">461</favoritings-count>
+    <comment-count type="integer">26</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/121926673/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">43998794</id>
+    <created-at type="datetime">2012-04-22T18:42:29Z</created-at>
+    <user-id type="integer">5692866</user-id>
+    <duration type="integer">182299</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">4372398</original-content-size>
+    <last-modified type="datetime">2014-10-06T01:28:52Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>break-my-stride-cover</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Blue Lagoon - Break My Stride (2004 ORIGINAL RADIO EDIT)</title>
+    <description>A 2004 pop / reggae cover version of the iconic Matthew Wilder classic by German pop group Blue Lagoon featuring Estrella (Patricia Gerndt) and David O'Joseph.  
+
+The song has been covered by many artists throughout the years, including charting versions from Unique II in 1996 and, in interpolations, Puff Daddy in 1997 and Christina Aguilera with Lil' Kim in 2003.</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>recording</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/43998794</uri>
+    <user>
+      <id type="integer">5692866</id>
+      <kind>user</kind>
+      <permalink>tommybrisbane</permalink>
+      <username>Late Night Brisbane City</username>
+      <last-modified type="datetime">2015-01-10T02:21:59Z</last-modified>
+      <uri>https://api.soundcloud.com/users/5692866</uri>
+      <permalink-url>http://soundcloud.com/tommybrisbane</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000114233308-1ffiv1-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/tommybrisbane/break-my-stride-cover</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000062272591-3xucfu-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/CNsgbUC6MkfQ_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/43998794/stream</stream-url>
+    <playback-count type="integer">22235</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">310</favoritings-count>
+    <comment-count type="integer">8</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/43998794/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">76866198</id>
+    <created-at type="datetime">2013-01-28T21:14:28Z</created-at>
+    <user-id type="integer">728971</user-id>
+    <duration type="integer">502772</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">20090736</original-content-size>
+    <last-modified type="datetime">2014-06-09T09:59:17Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>cherelle alexander oneal 80schild rework remix edit pop 80s groove soul</tag-list>
+    <permalink>exclusive-saturday-love-80s</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Saturday Love (80s Child Re-Work)</title>
+    <description>Cheryl Anne Norton, better known by her stage name, Cherrelle (born October 13, 1958), is an American R&amp;B singer who gained fame in the 1980s. Her signature hits include "I Didn't Mean to Turn You On", "Where Do I Run To", and "Everything I Miss at Home", and duets with R&amp;B singer Alexander O'Neal such as "Saturday Love" and "Never Knew Love Like This."
+
+This is my First ever Re-Work
+your thoughts and comments will be much appreciated and i hope you like it as this is going to be the first of many! thanks for the support guys!</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>cc-by</license>
+    <uri>https://api.soundcloud.com/tracks/76866198</uri>
+    <user>
+      <id type="integer">728971</id>
+      <kind>user</kind>
+      <permalink>80s-child-edits</permalink>
+      <username>80s Child Edits</username>
+      <last-modified type="datetime">2015-01-13T22:47:19Z</last-modified>
+      <uri>https://api.soundcloud.com/users/728971</uri>
+      <permalink-url>http://soundcloud.com/80s-child-edits</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000120017666-amxoex-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/80s-child-edits/exclusive-saturday-love-80s</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000039400705-y2rotu-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/NtuohMmfu1mD_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/76866198/stream</stream-url>
+    <playback-count type="integer">25348</playback-count>
+    <download-count type="integer">1209</download-count>
+    <favoritings-count type="integer">501</favoritings-count>
+    <comment-count type="integer">81</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/76866198/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">70270388</id>
+    <created-at type="datetime">2012-12-06T23:47:45Z</created-at>
+    <user-id type="integer">560749</user-id>
+    <duration type="integer">3336383</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">882707386</original-content-size>
+    <last-modified type="datetime">2014-12-23T15:07:02Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>DJ3SIXTY 80s MASHUP LMP DJKINGS REMIXIES</tag-list>
+    <permalink>80s-90s-mashup</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>80s-90s- mashup!</title>
+    <description>WHY NOT MUSIC LIVES IN MY HEART AND SOUL ENJOY SOME THIING I HAD FUN MIXING 80S-90S MASH UP</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>wav</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/70270388</uri>
+    <user>
+      <id type="integer">560749</id>
+      <kind>user</kind>
+      <permalink>dj3sixty</permalink>
+      <username>dj3sixty</username>
+      <last-modified type="datetime">2014-12-23T15:07:01Z</last-modified>
+      <uri>https://api.soundcloud.com/users/560749</uri>
+      <permalink-url>http://soundcloud.com/dj3sixty</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000000887087-i5hbky-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/dj3sixty/80s-90s-mashup</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000035660473-x05c1l-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/StshGLFbQhb4_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/70270388/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/70270388/download</download-url>
+    <playback-count type="integer">14374</playback-count>
+    <download-count type="integer">1716</download-count>
+    <favoritings-count type="integer">325</favoritings-count>
+    <comment-count type="integer">12</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/70270388/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">7996084</id>
+    <created-at type="datetime">2010-12-13T05:36:21Z</created-at>
+    <user-id type="integer">2343484</user-id>
+    <duration type="integer">247160</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">3108992</original-content-size>
+    <last-modified type="datetime">2013-03-15T13:01:34Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list></tag-list>
+    <permalink>nena-99luft-balons</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Nena- 99luft Balons</title>
+    <description></description>
+    <label-name></label-name>
+    <release></release>
+    <track-type></track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/7996084</uri>
+    <user>
+      <id type="integer">2343484</id>
+      <kind>user</kind>
+      <permalink>enteng</permalink>
+      <username>enteng escasura</username>
+      <last-modified type="datetime">2014-12-28T00:20:32Z</last-modified>
+      <uri>https://api.soundcloud.com/users/2343484</uri>
+      <permalink-url>http://soundcloud.com/enteng</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000002254520-vf0iwj-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/enteng/nena-99luft-balons</permalink-url>
+    <artwork-url nil="true"></artwork-url>
+    <waveform-url>https://w1.sndcdn.com/ZJoirsEo38yT_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/7996084/stream</stream-url>
+    <playback-count type="integer">29367</playback-count>
+    <download-count type="integer">100</download-count>
+    <favoritings-count type="integer">262</favoritings-count>
+    <comment-count type="integer">6</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/7996084/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">45118074</id>
+    <created-at type="datetime">2012-05-02T22:38:17Z</created-at>
+    <user-id type="integer">613029</user-id>
+    <duration type="integer">278622</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">11142709</original-content-size>
+    <last-modified type="datetime">2015-01-08T18:25:08Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>Tears Fears 80s nudisco phil drummond</tag-list>
+    <permalink>tears-for-fears-head-over</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Tears for Fears "Head Over Heels" Phil Drummond Pool Party Mix</title>
+    <description>Download here
+
+https://legitmix.com/discovery/remixer/24078/Phil-Drummond
+</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm type="float">100.0</bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/45118074</uri>
+    <user>
+      <id type="integer">613029</id>
+      <kind>user</kind>
+      <permalink>phil-drummond</permalink>
+      <username>Phil Drummond</username>
+      <last-modified type="datetime">2015-01-11T23:24:59Z</last-modified>
+      <uri>https://api.soundcloud.com/users/613029</uri>
+      <permalink-url>http://soundcloud.com/phil-drummond</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000053751253-gp36d5-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/phil-drummond/tears-for-fears-head-over</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000022684111-83t8n5-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/dcun22hj2NEA_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/45118074/stream</stream-url>
+    <playback-count type="integer">20758</playback-count>
+    <download-count type="integer">300</download-count>
+    <favoritings-count type="integer">383</favoritings-count>
+    <comment-count type="integer">26</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/45118074/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">167388173</id>
+    <created-at type="datetime">2014-09-12T11:40:08Z</created-at>
+    <user-id type="integer">198038</user-id>
+    <duration type="integer">3718042</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">148706743</original-content-size>
+    <last-modified type="datetime">2014-11-20T20:57:43Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>mix plastician bestival 2014 aperolspritzuk reachup throwback Dj Set 1980s 80's</tag-list>
+    <permalink>plastician-80s-set-live-recording-bestival-2014-aperol-spritz-stage</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Plastician - 80's Set LIVE Recording - Bestival 2014 Aperol Spritz Stage</title>
+    <description>My set from Bestival 2014 on the Aperol Spritz stage with the Reach Up crew! 
+
+Plenty of bangers and cheese in here!
+
+I'm open to doing this kind of thing live more often - hit up my agent rebecca@earth-agency.com for bookings</description>
+    <label-name nil="true"></label-name>
+    <release nil="true"></release>
+    <track-type nil="true"></track-type>
+    <key-signature nil="true"></key-signature>
+    <isrc nil="true"></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/167388173</uri>
+    <user>
+      <id type="integer">198038</id>
+      <kind>user</kind>
+      <permalink>plastician</permalink>
+      <username>Plastician</username>
+      <last-modified type="datetime">2015-01-13T22:48:39Z</last-modified>
+      <uri>https://api.soundcloud.com/users/198038</uri>
+      <permalink-url>http://soundcloud.com/plastician</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000056813707-t7ecg6-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/plastician/plastician-80s-set-live-recording-bestival-2014-aperol-spritz-stage</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000090802102-atj3mk-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/hmsVCyauIaBM_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/167388173/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/167388173/download</download-url>
+    <playback-count type="integer">18963</playback-count>
+    <download-count type="integer">939</download-count>
+    <favoritings-count type="integer">915</favoritings-count>
+    <comment-count type="integer">43</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/167388173/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">94868162</id>
+    <created-at type="datetime">2013-05-31T22:16:47Z</created-at>
+    <user-id type="integer">7918339</user-id>
+    <duration type="integer">384113</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">15362159</original-content-size>
+    <last-modified type="datetime">2014-12-09T12:20:35Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>Perturbator Sexualizer 80s 80's eighties perverted precinct Tommy synth retro vintage</tag-list>
+    <permalink>05-perturbator-perverted</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">false</downloadable>
+    <purchase-url nil="true"></purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Perturbator - Perverted Precinct (Feat. Tommy)</title>
+    <description></description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>original</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url nil="true"></video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>mp3</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/94868162</uri>
+    <user>
+      <id type="integer">7918339</id>
+      <kind>user</kind>
+      <permalink>perturbator</permalink>
+      <username>PERTURBATOR</username>
+      <last-modified type="datetime">2015-01-13T03:39:44Z</last-modified>
+      <uri>https://api.soundcloud.com/users/7918339</uri>
+      <permalink-url>http://soundcloud.com/perturbator</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000089919266-gs6cv0-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/perturbator/05-perturbator-perverted</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000049467198-59go41-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/EGLVmjMK5KeD_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/94868162/stream</stream-url>
+    <playback-count type="integer">49111</playback-count>
+    <download-count type="integer">0</download-count>
+    <favoritings-count type="integer">433</favoritings-count>
+    <comment-count type="integer">62</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/94868162/attachments</attachments-uri>
+  </track>
+  <track>
+    <kind>track</kind>
+    <id type="integer">25751061</id>
+    <created-at type="datetime">2011-10-17T17:27:06Z</created-at>
+    <user-id type="integer">26108</user-id>
+    <duration type="integer">300156</duration>
+    <commentable type="boolean">true</commentable>
+    <state>finished</state>
+    <original-content-size type="integer">10281495</original-content-size>
+    <last-modified type="datetime">2014-12-17T12:43:14Z</last-modified>
+    <sharing>public</sharing>
+    <tag-list>Annie Anthonio 80s remix edm designerdrugs electro</tag-list>
+    <permalink>annie-anthonio-designer</permalink>
+    <streamable type="boolean">true</streamable>
+    <embeddable-by>all</embeddable-by>
+    <downloadable type="boolean">true</downloadable>
+    <purchase-url>http://itunes.apple.com/us/album/anthonio-ep/id312388107</purchase-url>
+    <label-id nil="true"></label-id>
+    <purchase-title nil="true"></purchase-title>
+    <genre>80s</genre>
+    <title>Annie - Anthonio (Designer Drugs Remix)</title>
+    <description>Annie - Anthonio (Designer Drugs Remix)</description>
+    <label-name></label-name>
+    <release></release>
+    <track-type>remix</track-type>
+    <key-signature></key-signature>
+    <isrc></isrc>
+    <video-url>http://youtu.be/QMWopPgSGBs</video-url>
+    <bpm nil="true"></bpm>
+    <release-year nil="true"></release-year>
+    <release-month nil="true"></release-month>
+    <release-day nil="true"></release-day>
+    <original-format>m4a</original-format>
+    <license>all-rights-reserved</license>
+    <uri>https://api.soundcloud.com/tracks/25751061</uri>
+    <user>
+      <id type="integer">26108</id>
+      <kind>user</kind>
+      <permalink>designerdrugs</permalink>
+      <username>Designer Drugs Official</username>
+      <last-modified type="datetime">2015-01-14T08:02:13Z</last-modified>
+      <uri>https://api.soundcloud.com/users/26108</uri>
+      <permalink-url>http://soundcloud.com/designerdrugs</permalink-url>
+      <avatar-url>https://i1.sndcdn.com/avatars-000065571830-oq9wg6-large.jpg</avatar-url>
+    </user>
+    <permalink-url>http://soundcloud.com/designerdrugs/annie-anthonio-designer</permalink-url>
+    <artwork-url>https://i1.sndcdn.com/artworks-000012850243-rlz5jn-large.jpg</artwork-url>
+    <waveform-url>https://w1.sndcdn.com/gbfvr9YHqK3W_m.png</waveform-url>
+    <stream-url>https://api.soundcloud.com/tracks/25751061/stream</stream-url>
+    <download-url>https://api.soundcloud.com/tracks/25751061/download</download-url>
+    <playback-count type="integer">48933</playback-count>
+    <download-count type="integer">3197</download-count>
+    <favoritings-count type="integer">589</favoritings-count>
+    <comment-count type="integer">50</comment-count>
+    <attachments-uri>https://api.soundcloud.com/tracks/25751061/attachments</attachments-uri>
+  </track>
+</tracks>
